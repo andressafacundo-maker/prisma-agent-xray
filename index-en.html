@@ -44,10 +44,11 @@ body{font-family:var(--font);font-size:13px;color:var(--ink-2);-webkit-font-smoo
     radial-gradient(900px 520px at -8% 28%, rgba(12,124,107,.08), transparent 62%),
     radial-gradient(760px 420px at 62% 112%, rgba(245,163,48,.09), transparent 62%),
     var(--bg)}
-h1,h2,h3{color:var(--ink);line-height:1.25}
+h1,h2,h3{color:var(--ink);line-height:1.25;text-wrap:balance}
 p{margin:0}
 button{font-family:inherit}
 :focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:4px}
+.smap-tile:focus-visible,.side-ref a:focus-visible,.persona-switch button:focus-visible,.stepper .step:focus-visible{outline-color:#7DF0E0}
 ::selection{background:var(--brand-soft)}
 
 .app{display:grid;grid-template-columns:var(--side-w) 1fr;height:100vh}
@@ -135,7 +136,7 @@ button{font-family:inherit}
 .g-4{grid-template-columns:repeat(4,1fr)}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-sm);padding:14px 16px;transition:transform .15s,box-shadow .15s}
 .kpi:hover{transform:translateY(-2px);box-shadow:var(--sh)}
-.kpi .v{font-family:var(--disp);font-size:26px;font-weight:800;letter-spacing:-.5px;line-height:1.1;background:linear-gradient(120deg,var(--ink) 20%,#5A6B7E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi .v{font-family:var(--disp);font-size:26px;font-weight:800;letter-spacing:-.5px;line-height:1.1;font-variant-numeric:tabular-nums;background:linear-gradient(120deg,var(--ink) 20%,#5A6B7E);-webkit-background-clip:text;background-clip:text;color:transparent}
 .kpi .v small{font-size:13px;color:var(--muted);font-weight:700}
 .kpi .l{font-size:11.5px;font-weight:700;color:var(--ink);margin-top:4px}
 .kpi .t{font-size:9.5px;color:var(--muted);margin-top:2px;font-weight:600}
@@ -216,7 +217,7 @@ button{font-family:inherit}
 .ring .num small{font-size:6.5px;font-weight:800;letter-spacing:.8px;color:var(--muted);margin-top:2px}
 
 /* ============ TABELAS ============ */
-table{width:100%;border-collapse:collapse;font-size:10.5px}
+table{width:100%;border-collapse:collapse;font-size:10.5px;font-variant-numeric:tabular-nums}
 thead th{text-align:left;font-size:8.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#F8FAFC,#EFF3F8)}
 tbody td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
 tbody tr:last-child td{border-bottom:none}
@@ -478,6 +479,47 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
 .mb-8{margin-bottom:8px}.mb-12{margin-bottom:12px}.mb-16{margin-bottom:16px}
 .gap-8{gap:8px}.gap-12{gap:12px}
 
+/* ============ QUALITY SCREEN (redesign) ============ */
+.q-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:linear-gradient(120deg,#1E272E,#3A4B57);color:#fff;border-radius:var(--r-lg);padding:18px 22px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.q-head::before{content:'';position:absolute;top:-60px;right:-40px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(234,29,44,.28),transparent 65%);pointer-events:none}
+.q-head .pe{width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:26px;border:1px solid rgba(255,255,255,.14);flex:none;z-index:1}
+.q-head .qid{flex:1;min-width:220px;z-index:1}
+.q-head h2{margin:0;font-size:17px;font-weight:800;color:#fff;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.q-head h2 .chip{background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.q-head .pp{font-size:10.5px;color:rgba(255,255,255,.72);margin-top:4px}
+.q-avg{display:flex;align-items:center;gap:14px;padding:10px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);z-index:1;backdrop-filter:blur(4px)}
+.q-avg b{font-family:var(--disp);font-size:36px;font-weight:900;line-height:1;letter-spacing:-1px}
+.q-avg .qavg-lab{font-size:8px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;opacity:.78;line-height:1.6}
+.q-avg .qavg-lab span{display:block;font-size:10px;font-weight:700;letter-spacing:.2px;text-transform:none;opacity:.95}
+.q-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.q-kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--sh-sm);transition:transform .15s,box-shadow .15s}
+.q-kpi:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.q-kpi .l{font-size:8px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted)}
+.q-kpi .v{font-size:16px;font-weight:900;color:var(--ink);margin-top:6px;line-height:1.15}
+.q-kpi .v small{font-size:10px;font-weight:700;color:var(--muted)}
+.q-kpi .d{font-size:9px;color:var(--muted);margin-top:4px;line-height:1.5}
+.q-radar-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}
+.q-read{display:flex;flex-direction:column;gap:10px}
+.q-call{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card)}
+.q-call .ic{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:14px}
+.q-call .qc-t{flex:1;min-width:0}
+.q-call b{font-size:10.5px;display:block;color:var(--ink)}
+.q-call span{font-size:9px;color:var(--muted);display:block;margin-top:2px;line-height:1.5}
+.q-call .sc{margin-left:auto;font-size:21px;font-weight:900;line-height:1;flex:none}
+.q-metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.qm{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:9px;position:relative;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.qm::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--qm-accent,#D9DFE8)}
+.qm:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.qm .top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.qm .top b{font-size:11px;color:var(--ink)}
+.qm .top .sc{margin-left:auto;font-size:20px;font-weight:900;line-height:1}
+.qm .st{align-self:flex-start}
+.qm .interp{font-size:9.5px;color:var(--ink-2);line-height:1.55}
+.qm .orig{font-size:8.5px;color:var(--muted);font-style:italic;margin-top:auto;line-height:1.5}
+.q-metric-note{font-size:9px;color:var(--muted);margin-top:10px;line-height:1.6}
+@media (max-width:1180px){.q-radar-grid{grid-template-columns:1fr}.q-metric-grid,.q-kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.q-metric-grid,.q-kpis{grid-template-columns:1fr}}
+
 /* ============ TELAS / ANIMAÇÃO ============ */
 .screen{display:none}
 .screen.active{display:block;animation:fadeIn .25s ease}
@@ -682,11 +724,22 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
 
 <!-- ============ QUALITY (creator · step 2) ============ -->
 <section class="screen" id="s-qualidade" aria-label="Answer quality">
-  <div class="card mb-16">
-    <div class="card-t"><h3>🎯 Assessment radar</h3><span class="sub">6 metrics of iFood agent-eval (DeepEval) · derived from the agent record</span></div>
-    <div class="radar-wrap"><div id="evalRadar"></div></div>
+  <div id="qualHead" class="mb-16"></div>
+  <div class="q-radar-grid">
+    <div class="card">
+      <div class="card-t"><h3>🎯 Assessment radar</h3><span class="sub">6 metrics of iFood agent-eval (DeepEval) · derived from the agent record</span></div>
+      <div class="radar-wrap"><div id="evalRadar"></div></div>
+    </div>
+    <div class="card">
+      <div class="card-t"><h3>🧭 Reading</h3><span class="sub">what the radar says about this agent</span></div>
+      <div class="q-read" id="qualRead"></div>
+    </div>
   </div>
-  <div class="grid g-3" id="evalGrid"></div>
+  <div class="card mt-16">
+    <div class="card-t"><h3>🔬 The six metrics</h3><span class="sub">each one maps to a DeepEval standard · value 0–100</span></div>
+    <div class="q-metric-grid" id="evalGrid"></div>
+  </div>
+  <div id="qualBridge" class="mt-16"></div>
   <div class="jnav"></div>
 </section>
 
@@ -1865,8 +1918,11 @@ function renderEvalRadar(a){
   const s = critScores(a);
   const vals = EVALS_LIT.map(e=>s[e.i]);
   const avg = Math.round(vals.reduce((x,y)=>x+y,0)/vals.length);
-  const size = 420, cx = size/2, cy = size/2, R = 126;
+  const size = 420, cx = size/2, cy = size/2, R = 122;
   const N = EVALS_LIT.length;
+  const weakI = vals.indexOf(Math.min(...vals));
+  const strongI = vals.indexOf(Math.max(...vals));
+  const vCol = v => v>=75?'#177245':v>=55?'#B45309':'#C0392B';
   let out = '';
   [25,50,75,100].forEach(g=>{
     const pts=[];
@@ -1888,8 +1944,10 @@ function renderEvalRadar(a){
   out+=`<polygon points="${pts.join(' ')}" fill="rgba(234,29,44,.16)" stroke="#EA1D2C" stroke-width="2" stroke-linejoin="round"/>`;
   for(let i=0;i<N;i++){
     const ang=-Math.PI/2+i*2*Math.PI/N;
-    out+=`<circle cx="${cx+Math.cos(ang)*R*vals[i]/100}" cy="${cy+Math.sin(ang)*R*vals[i]/100}" r="3.5" fill="#EA1D2C"/>`;
-    const lr = R+38;
+    const vx = cx+Math.cos(ang)*R*vals[i]/100, vy = cy+Math.sin(ang)*R*vals[i]/100;
+    const isW = i===weakI, isS = i===strongI;
+    out+=`<circle cx="${vx}" cy="${vy}" r="${isW||isS?5:3.5}" fill="${isW?'#EA1D2C':isS?'#177245':vCol(vals[i])}" ${isW||isS?'stroke="#fff" stroke-width="1.5"':''}/>`;
+    const lr = R+44;
     const lx = cx+Math.cos(ang)*lr, ly = cy+Math.sin(ang)*lr;
     const name = EVALS_LIT[i].nome.split(' ');
     const l1 = name[0], l2 = name[1];
@@ -1897,7 +1955,7 @@ function renderEvalRadar(a){
     out+=`<text x="${lx}" y="${ly-2}" font-size="9" font-weight="800" fill="#3C4A5A" text-anchor="${anchor}">${l1}</text>`;
     out+=`<text x="${lx}" y="${ly+10}" font-size="9" font-weight="800" fill="#3C4A5A" text-anchor="${anchor}">${l2}</text>`;
   }
-  out+=`<text x="${cx}" y="${cy-6}" text-anchor="middle" font-size="30" font-weight="900" fill="#17202B">${avg}</text>`;
+  out+=`<text x="${cx}" y="${cy-6}" text-anchor="middle" font-size="32" font-weight="900" fill="#17202B">${avg}</text>`;
   out+=`<text x="${cx}" y="${cy+12}" text-anchor="middle" font-size="8" font-weight="800" letter-spacing="1" fill="#8495A3">EVAL AVG</text>`;
   document.getElementById('evalRadar').innerHTML = `<svg class="eval-radar" viewBox="0 0 ${size} ${size}" role="img" aria-label="Assessment radar with 6 DeepEval metrics">${out}</svg>`;
 }
@@ -1908,20 +1966,86 @@ function renderQualidade(param){
   rememberAgent(a.id);
   const s = critScores(a);
   renderEvalRadar(a);
+  const vals = EVALS_LIT.map(e=>s[e.i]);
+  const avg = Math.round(vals.reduce((x,y)=>x+y,0)/vals.length);
+  const rank = EVALS_LIT.map((e,i)=>({e,i,v:vals[i]})).sort((x,y)=>x.v-y.v);
+  const weak = rank[0], strong = rank[rank.length-1];
+  const risk = vals.filter(v=>v<55).length;
+  const verdict = avg>=75
+    ? {cls:'n-ok', t:'🟢 Well evaluated', x:`${a.name} is solid across the six evaluation metrics — it plans, grounds its claims and delivers with few detours.`}
+    : avg>=55
+    ? {cls:'n-warn', t:'🟡 Needs attention', x:`${a.name} has real strengths, but one metric is holding the average down. The fix is targeted, not broad.`}
+    : {cls:'n-danger', t:'🔴 At risk', x:`${a.name} fails in several evaluation dimensions — planning, tool use or grounding. It needs a structural fix before being relied on.`};
+  document.getElementById('qualHead').innerHTML = `
+    <div class="q-head">
+      <div class="pe">${a.emoji}</div>
+      <div class="qid">
+        <h2>${a.name} <span class="chip c-${a.level.toLowerCase()}">${a.level} · ${levelName(a.level)}</span>${a.used?'<span class="chip">● in use</span>':'<span class="chip">🪦 idle</span>'}</h2>
+        <div class="pp">${a.purpose}.</div>
+      </div>
+      <div class="q-avg">
+        <div class="qavg-lab">eval<br>average<span>of 6 metrics</span></div>
+        <b class="${avg>=75?'t-green':avg>=55?'t-amber':'t-red'}">${avg}</b>
+      </div>
+    </div>
+    <div class="q-kpis">
+      <div class="q-kpi"><div class="l">Weakest metric</div><div class="v t-red">${weak.e.nome} <small>${weak.v}/100</small></div><div class="d">${interpEval(weak.e.i, weak.v)}</div></div>
+      <div class="q-kpi"><div class="l">Strongest metric</div><div class="v t-green">${strong.e.nome} <small>${strong.v}/100</small></div><div class="d">${interpEval(strong.e.i, strong.v)}</div></div>
+      <div class="q-kpi"><div class="l">Metrics at risk</div><div class="v ${risk===0?'t-green':risk===1?'t-amber':'t-red'}">${risk}<small> / 6 below 55</small></div><div class="d">${risk===0?'all metrics healthy':risk===1?'one metric needs attention':'several metrics drag the score down'}</div></div>
+    </div>`;
+  document.getElementById('qualRead').innerHTML = `
+    <div class="note ${verdict.cls}"><b class="small" style="display:block;margin-bottom:3px">${verdict.t}</b>${verdict.x}</div>
+    <div class="q-call">
+      <div class="ic" style="background:var(--red-soft)">📉</div>
+      <div class="qc-t"><b>Weakest: ${weak.e.nome}</b><span>${interpEval(weak.e.i, weak.v)}</span></div>
+      <span class="sc t-red">${weak.v}</span>
+    </div>
+    <div class="q-call">
+      <div class="ic" style="background:var(--green-soft)">📈</div>
+      <div class="qc-t"><b>Strongest: ${strong.e.nome}</b><span>${interpEval(strong.e.i, strong.v)}</span></div>
+      <span class="sc t-green">${strong.v}</span>
+    </div>
+    <div class="q-call">
+      <div class="ic" style="background:var(--soft)">🧩</div>
+      <div class="qc-t"><b>Assessment source</b><span>6 DeepEval metrics derived from the agent record — in production, from the eval pipeline.</span></div>
+    </div>
+    ${risk>0
+      ? `<button class="btn btn-primary" onclick="location.hash='#/receitas/${a.id}'">🍳 see the fix for ${weak.e.nome} →</button>`
+      : `<button class="btn btn-teal" onclick="location.hash='#/acomp/${a.id}'">📈 track this agent's evolution →</button>`}`;
   document.getElementById('evalGrid').innerHTML = EVALS_LIT.map(e=>{
     const v = s[e.i];
-    return `<div class="eval-card">
+    const tag = v>=75 ? {c:'chip-ok', t:'strong', ic:'📈'} : v>=55 ? {c:'chip-warn', t:'attention', ic:'⚠️'} : {c:'chip-bad', t:'risk', ic:'🔴'};
+    return `<div class="qm" style="--qm-accent:${v>=75?'#177245':v>=55?'#B45309':'#C0392B'}">
       <div class="top">
         <b>${e.nome}</b><span class="src">${e.src}</span>
         <span class="sc ${v>=75?'t-green':v>=55?'t-amber':'t-red'}">${v}</span>
       </div>
-      <div class="hbar mt-12">
-        <div class="track"><div class="fill ${fillCls(v)}" style="--w:${v}%"></div></div>
-      </div>
+      <div class="hbar"><div class="track"><div class="fill ${fillCls(v)}" style="--w:${v}%"></div></div></div>
+      <span class="chip ${tag.c} st">${tag.ic} ${tag.t}</span>
       <div class="interp">${interpEval(e.i, v)}</div>
       <div class="orig">derived from: ${e.orig}</div>
     </div>`;
-  }).join('');
+  }).join('') + `<p class="q-metric-note" style="grid-column:1/-1">Every value derives from the agent record — nothing is guessed. When the eval pipeline turns on, these six numbers come straight from the real RAGAS/DeepEval scores.</p>`;
+  const bridge = document.getElementById('qualBridge');
+  if (bridge) bridge.innerHTML = risk>0 ? `
+    <div class="note n-warn">
+      <div class="row">
+        <div class="flex1" style="min-width:220px">
+          <b class="small t-amber">🔧 The bottleneck is ${weak.e.nome} (${weak.v}/100)</b>
+          <p class="tiny" style="margin-top:3px;line-height:1.6">The recipe step already has the targeted fix — before × after prompt, ready to apply.</p>
+        </div>
+        <button class="btn btn-amber btn-sm" onclick="location.hash='#/receitas/${a.id}'">open the recipe →</button>
+      </div>
+    </div>` : `
+    <div class="note n-ok">
+      <div class="row">
+        <div class="flex1" style="min-width:220px">
+          <b class="small t-green">✅ No metric below 55</b>
+          <p class="tiny" style="margin-top:3px;line-height:1.6">${a.name} passes all six metrics. Keep tracking the evolution to hold the standard.</p>
+        </div>
+        <button class="btn btn-teal btn-sm" onclick="location.hash='#/acomp/${a.id}'">track evolution →</button>
+      </div>
+    </div>`;
 }
 
 /* ============================ RECIPES ============================ */
