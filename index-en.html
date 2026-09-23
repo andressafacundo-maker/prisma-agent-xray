@@ -510,47 +510,47 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
 </head>
 <body>
 <div class="app">
-<aside class="sidebar" role="navigation" aria-label="Navegação principal">
-  <button class="logo" onclick="location.hash='#/panorama'" aria-label="Ir para o Panorama">
+<aside class="sidebar" role="navigation" aria-label="Main navigation">
+  <button class="logo" onclick="location.hash='#/panorama'" aria-label="Go to Overview">
     <span class="ico">🔺</span>
-    <span><b>Prisma</b><small>raio-x de agentes · v0.7</small></span>
+    <span><b>Prisma</b><small>agent x-ray · v0.7</small></span>
   </button>
-    <nav class="smap" aria-label="Mapa de telas">
-    <div class="smap-grp gg">🔺 geral</div>
+    <nav class="smap" aria-label="Screen map">
+    <div class="smap-grp gg">🔺 general</div>
     <div class="smap-grid">
-      <button class="smap-tile g" data-s="panorama" onclick="location.hash='#/panorama'"><span>🔺</span>Panorama</button>
+      <button class="smap-tile g" data-s="panorama" onclick="location.hash='#/panorama'"><span>🔺</span>Overview</button>
           </div>
   </nav>
-    <div class="smap-grp gu">🧭 quem usa</div>
+    <div class="smap-grp gu">🧭 who uses</div>
     <div class="smap-grid">
-      <button class="smap-tile u" data-s="encontrar" onclick="location.hash='#/encontrar'"><span>🎯</span>Encontre</button>
-      <button class="smap-tile u" data-s="profile" onclick="location.hash='#/profile'"><span>🪪</span>Conheça</button>
-      <button class="smap-tile u" data-s="perguntar" onclick="location.hash='#/perguntar'"><span>💬</span>Pergunte</button>
+      <button class="smap-tile u" data-s="encontrar" onclick="location.hash='#/encontrar'"><span>🎯</span>Find</button>
+      <button class="smap-tile u" data-s="profile" onclick="location.hash='#/profile'"><span>🪪</span>Meet</button>
+      <button class="smap-tile u" data-s="perguntar" onclick="location.hash='#/perguntar'"><span>💬</span>Ask</button>
       <button class="smap-tile u" data-s="regua" onclick="location.hash='#/regua'"><span>📏</span>Compare</button>
     </div>
-    <div class="smap-grp gm">🧑‍💻 quem cria</div>
+    <div class="smap-grp gm">🧑‍💻 who creates</div>
     <div class="smap-grid">
-      <button class="smap-tile m" data-s="inventario" onclick="location.hash='#/inventario'"><span>📇</span>Inventário</button>
-      <button class="smap-tile m" data-s="qualidade" onclick="location.hash='#/qualidade'"><span>🔬</span>Qualidade</button>
-      <button class="smap-tile m" data-s="receitas" onclick="location.hash='#/receitas'"><span>🍳</span>Receitas</button>
-      <button class="smap-tile m" data-s="acomp" onclick="location.hash='#/acomp'"><span>📈</span>Acompanhe</button>
+      <button class="smap-tile m" data-s="inventario" onclick="location.hash='#/inventario'"><span>📇</span>Inventory</button>
+      <button class="smap-tile m" data-s="qualidade" onclick="location.hash='#/qualidade'"><span>🔬</span>Quality</button>
+      <button class="smap-tile m" data-s="receitas" onclick="location.hash='#/receitas'"><span>🍳</span>Recipes</button>
+      <button class="smap-tile m" data-s="acomp" onclick="location.hash='#/acomp'"><span>📈</span>Track</button>
     </div>
     
-<div class="side-foot">🔺 Prisma · raio-x de agentes<br>catálogo de agentes + interações em produção</div>
+<div class="side-foot">🔺 Prisma · agent x-ray<br>agent catalog + production interactions</div>
 </aside>
 
 <main id="mainScroll" class="main">
 <div id="topbar"></div>
 
-<!-- ============ PANORAMA ============ -->
-<section class="screen active" id="s-panorama" aria-label="Panorama geral">
+<!-- ============ OVERVIEW ============ -->
+<section class="screen active" id="s-panorama" aria-label="Overview">
 <div class="dark-sec">
     <div class="row">
-      <div class="flex1"><h3>Um agente. Dois lados. Um padrão de qualidade.</h3>
-      <div class="sub" style="margin-top:6px">Quem usa extrai valor. Quem cria eleva o padrão. O mesmo agente, em movimento constante.</div></div>
+      <div class="flex1"><h3>One agent. Two sides. One quality standard.</h3>
+      <div class="sub" style="margin-top:6px">Those who use extract value. Those who create raise the bar. The same agent, in constant motion.</div></div>
     </div>
     <div class="hubwrap">
-      <svg class="hubsvg" viewBox="0 0 960 340" role="img" aria-label="Fluxo entre quem usa, o agente e quem cria">
+      <svg class="hubsvg" viewBox="0 0 960 340" role="img" aria-label="Flow between who uses, the agent and who creates">
         <defs>
           <marker id="hfT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6FE3D5"/></marker>
           <marker id="hfA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#FFC98A"/></marker>
@@ -562,51 +562,51 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
           <path d="M 714 222 C 700 302, 620 284, 540 234" stroke="#FFC98A" marker-end="url(#hfA)"><animate attributeName="stroke-dashoffset" from="0" to="-11" dur="1.1s" repeatCount="indefinite"/></path>
         </g>
         <g>
-          <rect x="298" y="30" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="341" y="45" text-anchor="middle" font-size="9" font-weight="800" fill="#7DF0E0">pergunta →</text>
-          <rect x="298" y="288" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="341" y="303" text-anchor="middle" font-size="9" font-weight="800" fill="#7DF0E0">← resposta</text>
-          <rect x="576" y="30" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="619" y="45" text-anchor="middle" font-size="9" font-weight="800" fill="#FFD9A6">evidência →</text>
-          <rect x="576" y="288" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="619" y="303" text-anchor="middle" font-size="9" font-weight="800" fill="#FFD9A6">← melhoria</text>
+          <rect x="298" y="30" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="341" y="45" text-anchor="middle" font-size="9" font-weight="800" fill="#7DF0E0">question →</text>
+          <rect x="298" y="288" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="341" y="303" text-anchor="middle" font-size="9" font-weight="800" fill="#7DF0E0">← answer</text>
+          <rect x="576" y="30" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="619" y="45" text-anchor="middle" font-size="9" font-weight="800" fill="#FFD9A6">evidence →</text>
+          <rect x="576" y="288" width="86" height="22" rx="11" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/><text x="619" y="303" text-anchor="middle" font-size="9" font-weight="800" fill="#FFD9A6">← improvement</text>
           <circle cx="352" cy="88" r="2.2" fill="rgba(111,227,213,.6)"/><circle cx="312" cy="252" r="2.2" fill="rgba(111,227,213,.6)"/>
           <circle cx="608" cy="88" r="2.2" fill="rgba(255,201,138,.6)"/><circle cx="648" cy="252" r="2.2" fill="rgba(255,201,138,.6)"/>
         </g>
       </svg>
-      <div class="hub-panel hu" onclick="setPersona('user');location.hash='#/encontrar'" role="button" tabindex="0" aria-label="Entrar pelo lado de quem usa" onkeydown="if(event.key==='Enter'){setPersona('user');location.hash='#/encontrar'}">
-        <div class="hp-head"><span class="hp-ico">🧭</span><b>Quem usa</b></div>
+      <div class="hub-panel hu" onclick="setPersona('user');location.hash='#/encontrar'" role="button" tabindex="0" aria-label="Enter on the user side" onkeydown="if(event.key==='Enter'){setPersona('user');location.hash='#/encontrar'}">
+        <div class="hp-head"><span class="hp-ico">🧭</span><b>Who uses</b></div>
         <ul>
-          <li onclick="event.stopPropagation();location.hash='#/encontrar'">🎯 descobre o agente certo</li>
-          <li onclick="event.stopPropagation();location.hash='#/perguntar'">💬 pergunta no formato exato</li>
-          <li onclick="event.stopPropagation();location.hash='#/regua'">📏 compara na régua de maturidade</li>
+          <li onclick="event.stopPropagation();location.hash='#/encontrar'">🎯 discovers the right agent</li>
+          <li onclick="event.stopPropagation();location.hash='#/perguntar'">💬 asks in the exact format</li>
+          <li onclick="event.stopPropagation();location.hash='#/regua'">📏 compares on the maturity ruler</li>
         </ul>
       </div>
-      <div class="hub-agent" onclick="location.hash='#/inventario'" role="button" tabindex="0" aria-label="Ver o catálogo de agentes" onkeydown="if(event.key==='Enter')location.hash='#/inventario'">
+      <div class="hub-agent" onclick="location.hash='#/inventario'" role="button" tabindex="0" aria-label="Open the agent catalog" onkeydown="if(event.key==='Enter')location.hash='#/inventario'">
         <div class="hub-emoji">🤖</div>
-        <div class="hub-name">agente de exemplo</div>
-        <div class="hub-sub">o ponto de encontro da operação</div>
+        <div class="hub-name">example agent</div>
+        <div class="hub-sub">the meeting point of the operation</div>
       </div>
-      <div class="hub-panel hc" onclick="setPersona('maker');location.hash='#/inventario'" role="button" tabindex="0" aria-label="Entrar pelo lado de quem cria" onkeydown="if(event.key==='Enter'){setPersona('maker');location.hash='#/inventario'}">
-        <div class="hp-head"><span class="hp-ico">🧑‍💻</span><b>Quem cria</b></div>
+      <div class="hub-panel hc" onclick="setPersona('maker');location.hash='#/inventario'" role="button" tabindex="0" aria-label="Enter on the creator side" onkeydown="if(event.key==='Enter'){setPersona('maker');location.hash='#/inventario'}">
+        <div class="hp-head"><span class="hp-ico">🧑‍💻</span><b>Who creates</b></div>
         <ul>
-          <li onclick="event.stopPropagation();location.hash='#/qualidade'">🔬 avalia com métricas de literatura</li>
-          <li onclick="event.stopPropagation();location.hash='#/receitas'">🍳 aplica a correção precisa</li>
-          <li onclick="event.stopPropagation();location.hash='#/acomp'">📈 acompanha a evolução real</li>
+          <li onclick="event.stopPropagation();location.hash='#/qualidade'">🔬 assesses with literature metrics</li>
+          <li onclick="event.stopPropagation();location.hash='#/receitas'">🍳 applies the precise fix</li>
+          <li onclick="event.stopPropagation();location.hash='#/acomp'">📈 tracks the real evolution</li>
         </ul>
       </div>
     </div>
     <div class="row" style="justify-content:center;margin-top:14px">
-      <button class="btn btn-teal" onclick="setPersona('user');location.hash='#/encontrar'">🧭 começar por quem usa →</button>
-      <button class="btn btn-amber" onclick="setPersona('maker');location.hash='#/inventario'">🧑‍💻 começar por quem cria →</button>
+      <button class="btn btn-teal" onclick="setPersona('user');location.hash='#/encontrar'">🧭 start with who uses →</button>
+      <button class="btn btn-amber" onclick="setPersona('maker');location.hash='#/inventario'">🧑‍💻 start with who creates →</button>
     </div>
   </div>
 
 <div id="panAlerts" class="mt-16"></div>
 </section>
 
-<!-- ============ ENCONTRAR (usuário · passo 1) ============ -->
-<section class="screen" id="s-encontrar" aria-label="Encontre o agente">
+<!-- ============ FIND (user · step 1) ============ -->
+<section class="screen" id="s-encontrar" aria-label="Find the agent">
   <div class="search-pill">
-    <input id="encontrarAsk" placeholder="Ex.: “por que a tabela de pedidos cresceu 2x esta semana?”" aria-label="Descreva sua necessidade"
+    <input id="encontrarAsk" placeholder="E.g.: “why did the orders table double this week?”" aria-label="Describe your need"
       onkeydown="if(event.key==='Enter')matchAgentes()" oninput="debouncedMatch()">
-    <button class="go" onclick="matchAgentes()" aria-label="Buscar agente">→</button>
+    <button class="go" onclick="matchAgentes()" aria-label="Search agent">→</button>
   </div>
   <div id="duelLine" class="mt-16"></div>
   <div id="stationAgents"></div>
@@ -614,25 +614,25 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
   <div class="jnav"></div>
 </section>
 
-<!-- ============ CONHECER (usuário · passo 2) ============ -->
-<section class="screen" id="s-profile" aria-label="Conheça o agente">
+<!-- ============ MEET (user · step 2) ============ -->
+<section class="screen" id="s-profile" aria-label="Meet the agent">
   <div id="profBody"></div>
   <div class="jnav"></div>
 </section>
 
-<!-- ============ PERGUNTAR (usuário · passo 3) ============ -->
-<section class="screen" id="s-perguntar" aria-label="Aprenda a perguntar">
+<!-- ============ ASK (user · step 3) ============ -->
+<section class="screen" id="s-perguntar" aria-label="Learn how to ask">
   <div id="pergBody"></div>
   <div class="jnav"></div>
 </section>
 
-<!-- ============ RÉGUA (usuário · passo 4) ============ -->
-<section class="screen" id="s-regua" aria-label="Compare na régua">
+<!-- ============ RULER (user · step 4) ============ -->
+<section class="screen" id="s-regua" aria-label="Compare on the ruler">
   <div class="card mb-16">
     <div class="row">
-      <span class="chip gray" style="cursor:default">FILTROS</span>
-      <div class="wrap" role="group" aria-label="Filtrar por nível">
-        <span class="chip click on" data-lv="all" onclick="toggleLv('all')" tabindex="0" role="button" aria-pressed="true" onkeydown="if(event.key==='Enter')toggleLv('all')">todos</span>
+      <span class="chip gray" style="cursor:default">FILTERS</span>
+      <div class="wrap" role="group" aria-label="Filter by level">
+        <span class="chip click on" data-lv="all" onclick="toggleLv('all')" tabindex="0" role="button" aria-pressed="true" onkeydown="if(event.key==='Enter')toggleLv('all')">all</span>
         <span class="chip click" data-lv="N0" onclick="toggleLv('N0')" tabindex="0" role="button" aria-pressed="false" onkeydown="if(event.key==='Enter')toggleLv('N0')">N0</span>
         <span class="chip click" data-lv="N1" onclick="toggleLv('N1')" tabindex="0" role="button" aria-pressed="false" onkeydown="if(event.key==='Enter')toggleLv('N1')">N1</span>
         <span class="chip click" data-lv="N2" onclick="toggleLv('N2')" tabindex="0" role="button" aria-pressed="false" onkeydown="if(event.key==='Enter')toggleLv('N2')">N2</span>
@@ -644,18 +644,18 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
   </div>
   <div class="grid g-2">
     <div class="card">
-      <div class="card-t"><h3>🎯 Maturidade × sucesso real</h3><span class="sub">cada bolha é um agente · tamanho = volume de uso</span></div>
-      <svg id="reguaScatter" viewBox="0 0 760 400" style="width:100%;height:auto" role="img" aria-label="Gráfico de dispersão maturidade versus sucesso"></svg>
+      <div class="card-t"><h3>🎯 Maturity × real success</h3><span class="sub">each bubble is an agent · size = usage volume</span></div>
+      <svg id="reguaScatter" viewBox="0 0 760 400" style="width:100%;height:auto" role="img" aria-label="Scatter chart of maturity versus success"></svg>
     </div>
     <div class="card">
-      <div class="card-t"><h3>🧭 Leitura da régua</h3><span class="sub" id="reguaPosChip"></span></div>
+      <div class="card-t"><h3>🧭 Reading the ruler</h3><span class="sub" id="reguaPosChip"></span></div>
       <div id="reguaBench"></div>
     </div>
   </div>
   <div class="card mt-16">
-    <div class="card-t"><h3>📋 Ranking completo</h3><span class="sub">score = 60% qualidade do prompt + 40% sucesso real</span></div>
+    <div class="card-t"><h3>📋 Full ranking</h3><span class="sub">score = 60% prompt quality + 40% real success</span></div>
     <div style="overflow-x:auto"><table>
-      <thead><tr><th>#</th><th>Agente</th><th>Régua</th><th>Sucesso real</th><th>Score</th><th>Leitura</th><th></th></tr></thead>
+      <thead><tr><th>#</th><th>Agent</th><th>Level</th><th>Real success</th><th>Score</th><th>Reading</th><th></th></tr></thead>
       <tbody id="reguaTable"></tbody>
     </table></div>
   </div>
@@ -663,35 +663,35 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
   <div class="jnav"></div>
 </section>
 
-<!-- ============ INVENTÁRIO (criador · passo 1) ============ -->
-<section class="screen" id="s-inventario" aria-label="Inventário dos agentes">
+<!-- ============ INVENTORY (creator · step 1) ============ -->
+<section class="screen" id="s-inventario" aria-label="Agent inventory">
   <div class="grid g-4" id="invKpis"></div>
   <div class="card mt-16" id="invLegend"></div>
   <div class="card mt-16">
     <div class="row">
-      <span class="chip gray" style="cursor:default">NÍVEL</span>
+      <span class="chip gray" style="cursor:default">LEVEL</span>
       <div id="levelFilter" class="wrap"></div>
-      <span class="chip gray" style="cursor:default">TEMA</span>
+      <span class="chip gray" style="cursor:default">THEME</span>
       <div id="invCats" class="wrap"></div>
-      <span class="chip click right" id="myChip" onclick="toggleMine()" role="button" tabindex="0" aria-pressed="false" onkeydown="if(event.key==='Enter')toggleMine()">👤 só meus agentes</span>
+      <span class="chip click right" id="myChip" onclick="toggleMine()" role="button" tabindex="0" aria-pressed="false" onkeydown="if(event.key==='Enter')toggleMine()">👤 only my agents</span>
     </div>
   </div>
   <div class="grid g-4 mt-16" id="agentsGrid"></div>
   <div class="jnav"></div>
 </section>
 
-<!-- ============ QUALIDADE (criador · passo 2) ============ -->
-<section class="screen" id="s-qualidade" aria-label="Qualidade da resposta">
+<!-- ============ QUALITY (creator · step 2) ============ -->
+<section class="screen" id="s-qualidade" aria-label="Answer quality">
   <div class="card mb-16">
-    <div class="card-t"><h3>🎯 Radar de avaliação</h3><span class="sub">6 métricas do agent-eval do iFood (DeepEval) · derivadas do registro do agente</span></div>
+    <div class="card-t"><h3>🎯 Assessment radar</h3><span class="sub">6 metrics of iFood agent-eval (DeepEval) · derived from the agent record</span></div>
     <div class="radar-wrap"><div id="evalRadar"></div></div>
   </div>
   <div class="grid g-3" id="evalGrid"></div>
   <div class="jnav"></div>
 </section>
 
-<!-- ============ RECEITAS (criador · passo 3) ============ -->
-<section class="screen" id="s-receitas" aria-label="Receitas de melhoria">
+<!-- ============ RECIPES (creator · step 3) ============ -->
+<section class="screen" id="s-receitas" aria-label="Improvement recipes">
   <div class="card mb-16">
     <div class="wrap" id="evoHeader"></div>
   </div>
@@ -699,26 +699,26 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
   <div class="jnav"></div>
 </section>
 
-<!-- ============ ACOMPANHAR (criador · passo 4) ============ -->
-<section class="screen" id="s-acomp" aria-label="Acompanhe a evolução">
+<!-- ============ TRACK (creator · step 4) ============ -->
+<section class="screen" id="s-acomp" aria-label="Track the evolution">
   <div class="grid g-3 mb-16" id="acompKpis"></div>
   <div class="grid g-2">
     <div class="card">
-      <div class="card-t"><h3>🌱 Linha da vida</h3><span class="sub">eventos reais do registro</span></div>
+      <div class="card-t"><h3>🌱 Life line</h3><span class="sub">real events from the record</span></div>
       <div id="acompTimeline" class="mt-12"></div>
     </div>
     <div class="card">
-      <div class="card-t"><h3>📈 Tendência semanal de sucesso</h3><span class="sub">reconstruída do padrão de interações</span></div>
+      <div class="card-t"><h3>📈 Weekly success trend</h3><span class="sub">reconstructed from the interaction pattern</span></div>
       <div id="acompTrend" class="mt-12"></div>
     </div>
   </div>
   <div class="grid g-2 mt-16">
     <div class="card">
-      <div class="card-t"><h3>🧱 Gates de evolução</h3><span class="sub">o que já cumpriu e o que falta</span></div>
+      <div class="card-t"><h3>🧱 Evolution gates</h3><span class="sub">what is done and what is missing</span></div>
       <div id="acompGates" class="mt-12" style="display:flex;flex-direction:column;gap:8px"></div>
     </div>
     <div class="card">
-      <div class="card-t"><h3>📍 Onde está agora</h3></div>
+      <div class="card-t"><h3>📍 Where it stands now</h3></div>
       <div class="grid g-3 mt-12" id="acompNow"></div>
     </div>
   </div>
@@ -726,129 +726,129 @@ details.sql .sq-r{margin-left:auto;font-size:8.5px;color:var(--muted);font-weigh
   <div class="jnav"></div>
 </section>
 
-<!-- ============ COMO FUNCIONA (referência) ============ -->
-<section class="screen" id="s-arch" aria-label="Como o Prisma funciona">
+<!-- ============ HOW IT WORKS (reference) ============ -->
+<section class="screen" id="s-arch" aria-label="How Prisma works">
   <div class="dark-sec mb-16">
     <div class="row">
       <div class="flex1" style="min-width:280px">
-        <h3>🏗️ O problema que o raio-x resolve</h3>
-        <div class="sub" style="margin-top:6px">Agentes crescem em silêncio: ninguém mede qualidade, custo nem efeito. O Prisma dá visibilidade antes do prejuízo virar hábito.</div>
+        <h3>🏗️ The problem the x-ray solves</h3>
+        <div class="sub" style="margin-top:6px">Agents grow in silence: nobody measures quality, cost or effect. Prisma gives visibility before the damage becomes a habit.</div>
       </div>
       <div class="wrap">
-        <div class="glass-chip"><b>27k</b><span>agentes na operação</span></div>
-        <div class="glass-chip"><b>2%</b><span>movem o ponteiro</span></div>
-        <div class="glass-chip"><b>0</b><span>visibilidade de qualidade</span></div>
+        <div class="glass-chip"><b>27k</b><span>agents in the operation</span></div>
+        <div class="glass-chip"><b>2%</b><span>move the needle</span></div>
+        <div class="glass-chip"><b>0</b><span>quality visibility</span></div>
       </div>
     </div>
     <div class="diagram">
-      <svg viewBox="0 0 860 420" style="width:100%;height:auto" role="img" aria-label="Diagrama de arquitetura do Prisma em 4 camadas">
+      <svg viewBox="0 0 860 420" style="width:100%;height:auto" role="img" aria-label="Prisma architecture diagram in 4 layers">
         <defs>
           <pattern id="pdots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="rgba(255,255,255,.06)"/></pattern>
           <marker id="parr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6FE3D5"/></marker>
         </defs>
         <rect x="0" y="0" width="860" height="420" fill="url(#pdots)" rx="12"/>
-        <text x="24" y="26" fill="#6FE3D5" font-size="10" font-weight="800" letter-spacing="2">L1 · FONTES</text>
-        <rect x="24" y="38" width="230" height="46" rx="9" fill="rgba(0,121,107,.22)" stroke="#26A69A"/><text x="40" y="57" fill="#C7E8E4" font-size="9.5" font-weight="700">🗂️ catálogo de agentes</text><text x="40" y="73" fill="#5F8A85" font-size="7.5">perfil · governança · prompt</text>
-        <rect x="266" y="38" width="230" height="46" rx="9" fill="rgba(46,125,50,.22)" stroke="#66BB6A"/><text x="282" y="57" fill="#C7E8C7" font-size="9.5" font-weight="700">⚡ interações em produção</text><text x="282" y="73" fill="#5F8A5F" font-size="7.5">uso · sucesso · ferramentas</text>
-        <rect x="508" y="38" width="200" height="46" rx="9" fill="none" stroke="rgba(255,255,255,.25)" stroke-dasharray="4 4"/><text x="524" y="57" fill="#8FA3B0" font-size="9.5" font-weight="700">📦 repo &amp; evals · futuro</text><text x="524" y="73" fill="#5B7180" font-size="7.5">scores RAGAS/DeepEval reais</text>
+        <text x="24" y="26" fill="#6FE3D5" font-size="10" font-weight="800" letter-spacing="2">L1 · SOURCES</text>
+        <rect x="24" y="38" width="230" height="46" rx="9" fill="rgba(0,121,107,.22)" stroke="#26A69A"/><text x="40" y="57" fill="#C7E8E4" font-size="9.5" font-weight="700">🗂️ agent catalog</text><text x="40" y="73" fill="#5F8A85" font-size="7.5">profile · governance · prompt</text>
+        <rect x="266" y="38" width="230" height="46" rx="9" fill="rgba(46,125,50,.22)" stroke="#66BB6A"/><text x="282" y="57" fill="#C7E8C7" font-size="9.5" font-weight="700">⚡ production interactions</text><text x="282" y="73" fill="#5F8A5F" font-size="7.5">usage · success · tools</text>
+        <rect x="508" y="38" width="200" height="46" rx="9" fill="none" stroke="rgba(255,255,255,.25)" stroke-dasharray="4 4"/><text x="524" y="57" fill="#8FA3B0" font-size="9.5" font-weight="700">📦 repo &amp; evals · future</text><text x="524" y="73" fill="#5B7180" font-size="7.5">real RAGAS/DeepEval scores</text>
         <line x1="139" y1="84" x2="139" y2="108" stroke="#6FE3D5" stroke-width="1.5" marker-end="url(#parr)"/>
         <line x1="381" y1="84" x2="381" y2="108" stroke="#6FE3D5" stroke-width="1.5" marker-end="url(#parr)"/>
-        <text x="24" y="124" fill="#FFB27D" font-size="10" font-weight="800" letter-spacing="2">L2 · ANÁLISE — 16 CRITÉRIOS EM 5 PILARES</text>
+        <text x="24" y="124" fill="#FFB27D" font-size="10" font-weight="800" letter-spacing="2">L2 · ANALYSIS — 16 CRITERIA IN 5 PILLARS</text>
         <g font-size="8.2">
-          <rect x="24" y="136" width="156" height="58" rx="9" fill="rgba(234,29,44,.16)" stroke="rgba(234,29,44,.45)"/><text x="36" y="153" fill="#FFC2C7" font-weight="800">📝 Prompt &amp; governança</text><text x="36" y="168" fill="#8FA3B0">clareza · segurança · concisão</text><text x="36" y="181" fill="#8FA3B0">governança</text>
-          <rect x="190" y="136" width="156" height="58" rx="9" fill="rgba(0,121,107,.16)" stroke="rgba(38,166,154,.45)"/><text x="202" y="153" fill="#C7E8E4" font-weight="800">🔬 Uso &amp; desempenho</text><text x="202" y="168" fill="#8FA3B0">sucesso · adoção · canais</text><text x="202" y="181" fill="#8FA3B0">recência</text>
-          <rect x="356" y="136" width="156" height="58" rx="9" fill="rgba(245,163,48,.14)" stroke="rgba(245,163,48,.45)"/><text x="368" y="153" fill="#FFD8A0" font-weight="800">🛠️ Skills &amp; ferramentas</text><text x="368" y="168" fill="#8FA3B0">repertório · falhas por tool</text><text x="368" y="181" fill="#8FA3B0">coerência · complexidade</text>
-          <rect x="522" y="136" width="156" height="58" rx="9" fill="rgba(123,31,162,.18)" stroke="rgba(186,104,200,.45)"/><text x="534" y="153" fill="#E1BEE7" font-weight="800">⚙️ Arquitetura &amp; operação</text><text x="534" y="168" fill="#8FA3B0">maturidade × uso real</text><text x="534" y="181" fill="#8FA3B0">declarado × usado</text>
-          <rect x="688" y="136" width="148" height="58" rx="9" fill="rgba(0,121,107,.2)" stroke="#6FE3D5"/><text x="700" y="153" fill="#A8F0E6" font-weight="800">🎯 Qualidade da resposta</text><text x="700" y="168" fill="#8FA3B0">relevância · fidelidade</text><text x="700" y="181" fill="#8FA3B0">planejamento · eficiência</text>
+          <rect x="24" y="136" width="156" height="58" rx="9" fill="rgba(234,29,44,.16)" stroke="rgba(234,29,44,.45)"/><text x="36" y="153" fill="#FFC2C7" font-weight="800">📝 Prompt &amp; governance</text><text x="36" y="168" fill="#8FA3B0">clarity · safety · conciseness</text><text x="36" y="181" fill="#8FA3B0">governance</text>
+          <rect x="190" y="136" width="156" height="58" rx="9" fill="rgba(0,121,107,.16)" stroke="rgba(38,166,154,.45)"/><text x="202" y="153" fill="#C7E8E4" font-weight="800">🔬 Use &amp; performance</text><text x="202" y="168" fill="#8FA3B0">success · adoption · channels</text><text x="202" y="181" fill="#8FA3B0">recency</text>
+          <rect x="356" y="136" width="156" height="58" rx="9" fill="rgba(245,163,48,.14)" stroke="rgba(245,163,48,.45)"/><text x="368" y="153" fill="#FFD8A0" font-weight="800">🛠️ Skills &amp; tools</text><text x="368" y="168" fill="#8FA3B0">repertoire · failures per tool</text><text x="368" y="181" fill="#8FA3B0">coherence · complexity</text>
+          <rect x="522" y="136" width="156" height="58" rx="9" fill="rgba(123,31,162,.18)" stroke="rgba(186,104,200,.45)"/><text x="534" y="153" fill="#E1BEE7" font-weight="800">⚙️ Architecture &amp; operation</text><text x="534" y="168" fill="#8FA3B0">maturity × real use</text><text x="534" y="181" fill="#8FA3B0">declared × used</text>
+          <rect x="688" y="136" width="148" height="58" rx="9" fill="rgba(0,121,107,.2)" stroke="#6FE3D5"/><text x="700" y="153" fill="#A8F0E6" font-weight="800">🎯 Answer quality</text><text x="700" y="168" fill="#8FA3B0">relevancy · faithfulness</text><text x="700" y="181" fill="#8FA3B0">planning · efficiency</text>
         </g>
         <line x1="420" y1="194" x2="420" y2="220" stroke="#6FE3D5" stroke-width="1.5" marker-end="url(#parr)"/>
-        <text x="24" y="236" fill="#6FE3D5" font-size="10" font-weight="800" letter-spacing="2">L3 · APLICAÇÃO — JORNADAS</text>
+        <text x="24" y="236" fill="#6FE3D5" font-size="10" font-weight="800" letter-spacing="2">L3 · APPLICATION — SCREENS</text>
         <g font-size="8">
-          <rect x="24" y="248" width="150" height="36" rx="9" fill="rgba(0,121,107,.2)" stroke="#26A69A"/><text x="36" y="270" fill="#C7E8E4" font-weight="800">🧭 JORNADA DE QUEM USA</text>
-          <rect x="184" y="248" width="150" height="36" rx="9" fill="rgba(230,81,0,.18)" stroke="#FF8A65"/><text x="196" y="270" fill="#FFD4BD" font-weight="800">🧑‍💻 JORNADA DE QUEM CRIA</text>
+          <rect x="24" y="248" width="150" height="36" rx="9" fill="rgba(0,121,107,.2)" stroke="#26A69A"/><text x="36" y="270" fill="#C7E8E4" font-weight="800">🧭 WHO USES</text>
+          <rect x="184" y="248" width="150" height="36" rx="9" fill="rgba(230,81,0,.18)" stroke="#FF8A65"/><text x="196" y="270" fill="#FFD4BD" font-weight="800">🧑‍💻 WHO CREATES</text>
           <g fill="#8FA3B0">
-            <rect x="24" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="59" y="310" text-anchor="middle">🎯 encontrar</text>
-            <rect x="100" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="135" y="310" text-anchor="middle">🪪 conhecer</text>
-            <rect x="176" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="211" y="310" text-anchor="middle">💬 perguntar</text>
-            <rect x="252" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="287" y="310" text-anchor="middle">📏 comparar</text>
-            <rect x="24" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="59" y="342" text-anchor="middle">📇 inventário</text>
-            <rect x="100" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="135" y="342" text-anchor="middle">🔬 qualidade</text>
-            <rect x="176" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="211" y="342" text-anchor="middle">🍳 receitas</text>
-            <rect x="252" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="287" y="342" text-anchor="middle">📈 acompanhar</text>
+            <rect x="24" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="59" y="310" text-anchor="middle">🎯 find</text>
+            <rect x="100" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="135" y="310" text-anchor="middle">🪪 meet</text>
+            <rect x="176" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="211" y="310" text-anchor="middle">💬 ask</text>
+            <rect x="252" y="294" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="287" y="310" text-anchor="middle">📏 compare</text>
+            <rect x="24" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="59" y="342" text-anchor="middle">📇 inventory</text>
+            <rect x="100" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="135" y="342" text-anchor="middle">🔬 quality</text>
+            <rect x="176" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="211" y="342" text-anchor="middle">🍳 recipes</text>
+            <rect x="252" y="326" width="70" height="24" rx="7" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/><text x="287" y="342" text-anchor="middle">📈 track</text>
           </g>
         </g>
-        <rect x="24" y="360" width="300" height="42" rx="9" fill="rgba(0,121,107,.12)" stroke="rgba(38,166,154,.4)"/><text x="36" y="378" fill="#A8F0E6" font-size="8.5" font-weight="800">→ QUEM USA SAI COM</text><text x="36" y="393" fill="#8FA3B0" font-size="7.8">agente certo para a necessidade + modelo de como perguntar</text>
-        <rect x="336" y="360" width="300" height="42" rx="9" fill="rgba(230,81,0,.12)" stroke="rgba(255,138,101,.4)"/><text x="348" y="378" fill="#FFD4BD" font-size="8.5" font-weight="800">→ QUEM CRIA SAI COM</text><text x="348" y="393" fill="#8FA3B0" font-size="7.8">diagnóstico do gargalo + receita antes×depois + gates</text>
-        <rect x="648" y="360" width="188" height="42" rx="9" fill="rgba(234,29,44,.12)" stroke="rgba(234,29,44,.4)"/><text x="660" y="378" fill="#FFC2C7" font-size="8.5" font-weight="800">→ DECISÃO</text><text x="660" y="393" fill="#8FA3B0" font-size="7.8">reativar · corrigir · aposentar</text>
+        <rect x="24" y="360" width="300" height="42" rx="9" fill="rgba(0,121,107,.12)" stroke="rgba(38,166,154,.4)"/><text x="36" y="378" fill="#A8F0E6" font-size="8.5" font-weight="800">→ WHO USES COMES OUT WITH</text><text x="36" y="393" fill="#8FA3B0" font-size="7.8">the right agent for the need + a model of how to ask</text>
+        <rect x="336" y="360" width="300" height="42" rx="9" fill="rgba(230,81,0,.12)" stroke="rgba(255,138,101,.4)"/><text x="348" y="378" fill="#FFD4BD" font-size="8.5" font-weight="800">→ WHO CREATES COMES OUT WITH</text><text x="348" y="393" fill="#8FA3B0" font-size="7.8">bottleneck diagnosis + before×after recipe + gates</text>
+        <rect x="648" y="360" width="188" height="42" rx="9" fill="rgba(234,29,44,.12)" stroke="rgba(234,29,44,.4)"/><text x="660" y="378" fill="#FFC2C7" font-size="8.5" font-weight="800">→ DECISION</text><text x="660" y="393" fill="#8FA3B0" font-size="7.8">reactivate · fix · retire</text>
         <path d="M 812 60 L 812 380 Q 812 396 796 396 L 648 396" fill="none" stroke="#6FE3D5" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#parr)" opacity=".7">
           <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>
         </path>
-        <text x="818" y="230" fill="#6FE3D5" font-size="7.5" font-weight="800" transform="rotate(90 818 230)">LOOP · mudança → novo snapshot</text>
+        <text x="818" y="230" fill="#6FE3D5" font-size="7.5" font-weight="800" transform="rotate(90 818 230)">LOOP · change → new snapshot</text>
       </svg>
     </div>
   </div>
   <div class="grid g-2 mb-16">
-    <div class="card"><div class="card-t"><h3>🧾 Decisão 1 · SPA vanilla, zero backend</h3></div><p class="small muted" style="line-height:1.7">Um único arquivo HTML, CSS e JS puro — nada de build, servidor ou dependência. O protótipo roda de qualquer lugar e a lógica de avaliação fica transparente, auditável linha a linha.</p></div>
-    <div class="card"><div class="card-t"><h3>🧾 Decisão 2 · Tudo deriva das fontes</h3></div><p class="small muted" style="line-height:1.7">Nenhum número é chutado: cada score é uma conta sobre o catálogo de agentes ou as interações em produção. Se um dado não existe, o critério cai — nunca se inventa.</p></div>
-    <div class="card"><div class="card-t"><h3>🧾 Decisão 3 · LLM-as-judge no pilar de eval</h3></div><p class="small muted" style="line-height:1.7">Relevância, fidelidade, planejamento e eficiência seguem os padrões DeepEval/RAGAS que a esteira de eval já emite — o protótipo usa proxies do registro; em produção, consome os scores reais.</p></div>
-    <div class="card"><div class="card-t"><h3>🧾 Decisão 4 · Evolução por snapshot</h3></div><p class="small muted" style="line-height:1.7">Cada mudança de prompt gera um novo snapshot do agente: antes × depois, tendência semanal e gates. O loop de melhoria vira rotina, não projeto.</p></div>
+    <div class="card"><div class="card-t"><h3>🧾 Decision 1 · Vanilla SPA, zero backend</h3></div><p class="small muted" style="line-height:1.7">A single HTML file with pure CSS and JS — no build, server or dependency. The prototype runs anywhere and the evaluation logic stays transparent, auditable line by line.</p></div>
+    <div class="card"><div class="card-t"><h3>🧾 Decision 2 · Everything derives from the sources</h3></div><p class="small muted" style="line-height:1.7">No number is guessed: every score is a calculation over the agent catalog or production interactions. If a datum does not exist, the criterion drops — never invent.</p></div>
+    <div class="card"><div class="card-t"><h3>🧾 Decision 3 · LLM-as-judge in the eval pillar</h3></div><p class="small muted" style="line-height:1.7">Relevancy, faithfulness, planning and efficiency follow the DeepEval/RAGAS standards the eval pipeline already emits — the prototype uses record proxies; in production, it consumes the real scores.</p></div>
+    <div class="card"><div class="card-t"><h3>🧾 Decision 4 · Evolution by snapshot</h3></div><p class="small muted" style="line-height:1.7">Every prompt change generates a new snapshot of the agent: before × after, weekly trend and gates. The improvement loop becomes routine, not a project.</p></div>
   </div>
   <div class="card">
-    <div class="card-t"><h3>🧫 Referências de consulta</h3><span class="sub">as contas por trás de cada tela</span></div>
+    <div class="card-t"><h3>🧫 Query references</h3><span class="sub">the calculations behind each screen</span></div>
     <div id="sqlList"></div>
   </div>
 </section>
 
-<button class="page-scroll" onclick="scrollMain()" aria-label="Rolar a página">▾</button>
+<button class="page-scroll" onclick="scrollMain()" aria-label="Scroll the page">▾</button>
 </main>
 </div>
 <script>
-/* ============================ DATASET (catálogo fictício do protótipo) ============================ */
+/* ============================ DATASET (fictional prototype catalog) ============================ */
 const AGENTS = [
- {id:'sql-ninja', name:'SQL Ninja', emoji:'🥷', purpose:'Consultas e otimização SQL no Databricks', level:'N4', used:true,
+ {id:'sql-ninja', name:'SQL Ninja', emoji:'🥷', purpose:'SQL queries and optimization on Databricks', level:'N4', used:true,
   themes:['sql','cost'], skills:['databricks-query','sql-tuning'],
   interactions:{total:512,success:482,fail:30},
-  instructions:"Você é o SQL Ninja 🥷, especialista em Spark SQL no Databricks.\n\nRegras:\n1. Sempre responda com a query completa + explicação de até 3 linhas.\n2. Use execute_sql para validar antes de responder.\n3. Se passar de 10 min, sugira particionamento e broadcast hints.\n4. Cite tabelas como catalog.schema.tabela.\n5. NUNCA rode queries em tabelas de PII sem máscara.\n6. NUNCA compartilhe resultados fora dos canais do time."},
- {id:'query-optimizer', name:'Query Optimizer', emoji:'⚡', purpose:'Reescreve consultas lentas e corta custo', level:'N4', used:true,
+  instructions:"You are SQL Ninja 🥷, a Spark SQL specialist on Databricks.\n\nRules:\n1. Always answer with the full query plus an explanation of up to 3 lines.\n2. Use execute_sql to validate before answering.\n3. If it takes over 10 min, suggest partitioning and broadcast hints.\n4. Reference tables as catalog.schema.table.\n5. NEVER run queries on PII tables without masking.\n6. NEVER share results outside the team channels."},
+ {id:'query-optimizer', name:'Query Optimizer', emoji:'⚡', purpose:'Rewrites slow queries and cuts cost', level:'N4', used:true,
   themes:['sql','cost'], skills:['sql-tuning','cost-forecast'],
   interactions:{total:388,success:369,fail:19},
-  instructions:"Você é o Query Optimizer ⚡. Analise o plano físico e proponha reescritas com ganho estimado em % de DBUs e tempo. Nunca sugira sem mostrar o antes/depois.\n\nNUNCA sugira mudanças em produção sem antes validar em sandbox."},
- {id:'data-genie', name:'Data Genie', emoji:'🧞', purpose:'Insights e exploração de dados sob demanda', level:'N3', used:true,
+  instructions:"You are Query Optimizer ⚡. Analyze the physical plan and propose rewrites with the estimated gain in % of DBUs and time. Never suggest without showing the before/after.\n\nNEVER suggest production changes without validating them in a sandbox first."},
+ {id:'data-genie', name:'Data Genie', emoji:'🧞', purpose:'On-demand insights and data exploration', level:'N3', used:true,
   themes:['sql','dashboards'], skills:['databricks-query','dashboard-gen'],
   interactions:{total:421,success:355,fail:66},
-  instructions:"Você é o Data Genie 🧞. Traduza a pergunta de negócio em métricas, explore com ai_query e entregue insight com gráfico pronto para o Slack."},
- {id:'log-sentinel', name:'Log Sentinel', emoji:'🛡️', purpose:'Monitora erros de pipeline e sugere correções', level:'N3', used:true,
+  instructions:"You are Data Genie 🧞. Translate the business question into metrics, explore with ai_query and deliver an insight with a chart ready for Slack."},
+ {id:'log-sentinel', name:'Log Sentinel', emoji:'🛡️', purpose:'Monitors pipeline errors and suggests fixes', level:'N3', used:true,
   themes:['quality','monitoring'], skills:['pipeline-monitor','log-analysis'],
   interactions:{total:350,success:286,fail:64},
-  instructions:"Você é o Log Sentinel 🛡️. Vigie pipelines 24/7: classifique o erro (infra/dados/código), ache a causa nos logs e proponha correção + dono.\n\nNUNCA silencie um alarme crítico sem registrar o motivo."},
- {id:'schema-doctor', name:'Schema Doctor', emoji:'🩺', purpose:'Audita schemas e detecta anomalias', level:'N2', used:false,
+  instructions:"You are Log Sentinel 🛡️. Watch pipelines 24/7: classify the error (infra/data/code), find the cause in the logs and propose a fix + owner.\n\nNEVER silence a critical alarm without registering the reason."},
+ {id:'schema-doctor', name:'Schema Doctor', emoji:'🩺', purpose:'Audits schemas and detects anomalies', level:'N2', used:false,
   themes:['quality','documentation'], skills:['schema-audit'],
   interactions:{total:12,success:7,fail:5},
-  instructions:"Você é o Schema Doctor 🩺. Audite schemas e gere relatórios de anomalias."},
- {id:'data-qualy', name:'Data Qualy', emoji:'✅', purpose:'Gera regras de qualidade de dados (DQX)', level:'N2', used:true,
+  instructions:"You are Schema Doctor 🩺. Audit schemas and generate anomaly reports."},
+ {id:'data-qualy', name:'Data Qualy', emoji:'✅', purpose:'Generates data quality rules (DQX)', level:'N2', used:true,
   themes:['quality','documentation'], skills:['dqx-validation','dbt-docs'],
   interactions:{total:142,success:106,fail:36},
-  instructions:"Você é o Data Qualy ✅. Gere regras DQX com campo, tipo de validação, limiar e justificativa de negócio.\n\nNUNCA remova uma regra de qualidade sem aprovação do dono da tabela."},
- {id:'paydoc-writer', name:'PayDoc Writer', emoji:'📝', purpose:'Documenta tabelas e modelos dbt', level:'N2', used:true,
+  instructions:"You are Data Qualy ✅. Generate DQX rules with field, validation type, threshold and business justification.\n\nNEVER remove a quality rule without the table owner's approval."},
+ {id:'paydoc-writer', name:'PayDoc Writer', emoji:'📝', purpose:'Documents dbt tables and models', level:'N2', used:true,
   themes:['documentation','sql'], skills:['dbt-docs','databricks-query'],
   interactions:{total:96,success:69,fail:27},
-  instructions:"Você é o PayDoc Writer 📝. Documente tabelas dbt com descrição, granularidade, dono, SLAs e exemplos. Sempre cite a fonte."},
- {id:'kpi-oracle', name:'KPI Oracle', emoji:'🔮', purpose:'Cria dashboards e métricas executivas', level:'N1', used:true,
+  instructions:"You are PayDoc Writer 📝. Document dbt tables with description, granularity, owner, SLAs and examples. Always cite the source."},
+ {id:'kpi-oracle', name:'KPI Oracle', emoji:'🔮', purpose:'Creates executive dashboards and metrics', level:'N1', used:true,
   themes:['dashboards','cost'], skills:['dashboard-gen','cost-forecast'],
   interactions:{total:58,success:37,fail:21},
-  instructions:"Você é o KPI Oracle 🔮. Gere dashboards executivos focados em 3-5 métricas acionáveis."},
- {id:'etl-scribe', name:'ETL Scribe', emoji:'🖋️', purpose:'Documenta pipelines de ETL', level:'N0', used:false,
+  instructions:"You are KPI Oracle 🔮. Generate executive dashboards focused on 3-5 actionable metrics."},
+ {id:'etl-scribe', name:'ETL Scribe', emoji:'🖋️', purpose:'Documents ETL pipelines', level:'N0', used:false,
   themes:['documentation','monitoring'], skills:['etl-doc'],
   interactions:{total:0,success:0,fail:0},
-  instructions:"Você é o ETL Scribe 🖋️. Documente pipelines ETL."},
- {id:'prompt-poet', name:'Prompt Poet', emoji:'🎭', purpose:'Melhora prompts de outros agentes', level:'N1', used:false,
+  instructions:"You are ETL Scribe 🖋️. Document ETL pipelines."},
+ {id:'prompt-poet', name:'Prompt Poet', emoji:'🎭', purpose:"Improves other agents' prompts", level:'N1', used:false,
   themes:['prompts','sql'], skills:['prompt-rewrite'],
   interactions:{total:5,success:2,fail:3},
-  instructions:"Você é o Prompt Poet 🎭. Melhore prompts com clareza e estrutura."},
- {id:'finops-sage', name:'FinOps Sage', emoji:'🧙', purpose:'Previsão de custo e otimização em tempo real', level:'N5', used:true,
+  instructions:"You are Prompt Poet 🎭. Improve prompts with clarity and structure."},
+ {id:'finops-sage', name:'FinOps Sage', emoji:'🧙', purpose:'Real-time cost forecasting and optimization', level:'N5', used:true,
   themes:['cost','dashboards'], skills:['cost-forecast','dashboard-gen'],
   interactions:{total:34,success:33,fail:1},
-  instructions:"Você é o FinOps Sage 🧙 (N5). Monitore custos em tempo real, projete o gasto do mês, proponha ações com ROI e aprenda com o resultado anterior (loop com humano no controle).\n\nNUNCA faça previsões de custo sem citar a janela de dados usada."},
+  instructions:"You are FinOps Sage 🧙 (N5). Monitor costs in real time, project the month's spend, propose actions with ROI and learn from the previous result (loop with a human in control).\n\nNEVER make cost forecasts without citing the data window used."},
 ];
 const ENRICH = {
  'sql-ninja':{owner:'andressa.facundo@ifood.com.br',seniority:'especialista',type:'dados',oauth:[],mcp:['databricks','slack'],costm:3,system:4,created:'2026-02-10',updated:'2026-09-08',lastEditor:'andressa.facundo@ifood.com.br',clawShare:0.15,model:'claude-sonnet-4'},
@@ -878,11 +878,11 @@ const TOOLS_DATA = {
 };
 AGENTS.forEach(a=>Object.assign(a, ENRICH[a.id]||{}));
 AGENTS.forEach(a=>Object.assign(a, TOOLS_DATA[a.id]||{}));
-AGENTS.forEach(a=>{ a.hasNever = /NUNCA/i.test(a.instructions||''); });
+AGENTS.forEach(a=>{ a.hasNever = /NEVER/i.test(a.instructions||''); });
 
-const TOPICS = { sql:'SQL & Databricks', cost:'Custo / FinOps', quality:'Qualidade de dados', documentation:'Documentação', dashboards:'Dashboards & KPIs', prompts:'Prompt engineering', monitoring:'Monitoramento' };
-const SKILL_WHAT = { 'databricks-query':'consulta dados no Databricks e responde com números', 'sql-tuning':'reescreve consultas lentas com ganho estimado', 'dqx-validation':'cria regras de qualidade de dados (DQX)', 'pipeline-monitor':'vigia pipelines e classifica erros', 'dbt-docs':'gera documentação de tabelas e modelos', 'dashboard-gen':'monta dashboards e KPIs visuais', 'schema-audit':'audita schemas e detecta anomalias', 'cost-forecast':'projeta custos e sugere economia', 'log-analysis':'analisa logs e acha a causa raiz de erros', 'prompt-rewrite':'reescreve prompts com clareza e estrutura', 'etl-doc':'documenta pipelines de ETL' };
-const TYPE_NAMES = {dados:'Dados & Analytics', engenharia:'Engenharia de Dados', negocio:'Negócio / Finanças', ops:'Operações & Confiabilidade'};
+const TOPICS = { sql:'SQL & Databricks', cost:'Cost / FinOps', quality:'Data quality', documentation:'Documentation', dashboards:'Dashboards & KPIs', prompts:'Prompt engineering', monitoring:'Monitoring' };
+const SKILL_WHAT = { 'databricks-query':'queries Databricks data and answers with numbers', 'sql-tuning':'rewrites slow queries with an estimated gain', 'dqx-validation':'creates data quality rules (DQX)', 'pipeline-monitor':'watches pipelines and classifies errors', 'dbt-docs':'generates table and model documentation', 'dashboard-gen':'builds dashboards and visual KPIs', 'schema-audit':'audits schemas and detects anomalies', 'cost-forecast':'projects costs and suggests savings', 'log-analysis':'analyzes logs and finds root causes', 'prompt-rewrite':'rewrites prompts with clarity and structure', 'etl-doc':'documents ETL pipelines' };
+const TYPE_NAMES = {dados:'Data & Analytics', engenharia:'Data Engineering', negocio:'Business / Finance', ops:'Operations & Reliability'};
 const IDLE = AGENTS.filter(a=>!a.used);
 const RISK_AGENTS = AGENTS.filter(a=>a.oauth.length && !a.hasNever);
 const ORPHAN_AGENTS = AGENTS.filter(a=>a.lastEditor !== a.owner);
@@ -892,44 +892,44 @@ const TODAY = '2026-09-18';
 function daysAgo(d){ return d ? Math.max(0, Math.round((new Date(TODAY) - new Date(d))/86400000)) : 999; }
 function seeded(idStr){ let h=0; for(const c of idStr) h=(h*31+c.charCodeAt(0))>>>0; return (h%1000)/1000; }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function levelName(l){ return {N0:'Ad-hoc',N1:'Estruturado',N2:'Instrumentado',N3:'Medido (CI)',N4:'Otimizado',N5:'Auto-corretivo'}[l]||l; }
+function levelName(l){ return {N0:'Ad-hoc',N1:'Structured',N2:'Instrumented',N3:'Measured (CI)',N4:'Optimized',N5:'Self-correcting'}[l]||l; }
 
-/* ============================ CRITÉRIOS (16, derivados dos dados) ============================ */
+/* ============================ CRITERIA (16, derived from the data) ============================ */
 const CRIT = [
- {s:'Clareza', l:'clareza e estrutura do prompt', p:0},
- {s:'Segurança', l:'regras "NUNCA" no prompt', p:0},
- {s:'Concisão', l:'tamanho adequado do prompt', p:0},
- {s:'Governança', l:'OAuth seguro + dono = editor', p:0},
- {s:'Sucesso', l:'taxa de execução correta', p:1},
- {s:'Adoção', l:'volume de interações', p:1},
- {s:'Canais', l:'presença nos canais do time', p:1},
- {s:'Recência', l:'uso recente', p:1},
- {s:'Skills', l:'repertório de skills', p:2},
- {s:'Ferramentas', l:'falhas por chamada de ferramenta', p:2},
- {s:'Coerência', l:'maturidade × sucesso coerentes', p:3},
- {s:'Complexidade', l:'ferramentas declaradas × uso real', p:3},
- {s:'Relevância', l:'resposta atende ao pedido (answer relevancy)', p:4},
- {s:'Fidelidade', l:'não inventa — fiel à evidência', p:4},
- {s:'Planejamento', l:'plano claro e seguido', p:4},
- {s:'Eficiência', l:'mínimo de chamadas (step efficiency)', p:4},
+ {s:'Clarity', l:'prompt clarity and structure', p:0},
+ {s:'Safety', l:'NEVER rules in the prompt', p:0},
+ {s:'Conciseness', l:'right prompt length', p:0},
+ {s:'Governance', l:'safe OAuth + owner = editor', p:0},
+ {s:'Success', l:'correct execution rate', p:1},
+ {s:'Adoption', l:'interaction volume', p:1},
+ {s:'Channels', l:'presence in team channels', p:1},
+ {s:'Recency', l:'recent use', p:1},
+ {s:'Skills', l:'skill repertoire', p:2},
+ {s:'Tools', l:'failures per tool call', p:2},
+ {s:'Coherence', l:'maturity × success coherence', p:3},
+ {s:'Complexity', l:'declared tools × real use', p:3},
+ {s:'Relevancy', l:'answer meets the request (answer relevancy)', p:4},
+ {s:'Faithfulness', l:'never invents — faithful to evidence', p:4},
+ {s:'Planning', l:'clear plan, followed through', p:4},
+ {s:'Efficiency', l:'minimal tool calls (step efficiency)', p:4},
 ];
 const CRIT_DEF = [
- 'O prompt explica claramente o que o agente faz e como responde — regras organizadas, sem improviso.',
- 'O agente tem limites explícitos do que NUNCA pode fazer (segurança e privacidade).',
- 'O prompt tem o tamanho certo: nem vago demais, nem longo demais.',
- 'Existe dono definido e o acesso do agente (OAuth) está sob controle.',
- 'De cada chamada ao agente, quantas ele executou corretamente.',
- 'Quantas pessoas realmente usam o agente (volume de interações).',
- 'O agente está onde o time trabalha: Slack, Web e API.',
- 'O agente foi usado recentemente ou está parado há semanas.',
- 'O agente usa um bom repertório de habilidades para cada tipo de pedido.',
- 'As ferramentas do agente funcionam sem falhas.',
- 'O nível declarado corresponde ao desempenho real (sem nota inflada).',
- 'As ferramentas que o agente declara são usadas de verdade.',
- 'A resposta atende ao que foi pedido — sem fugir do assunto.',
- 'O agente nunca inventa: só afirma o que as fontes confirmam.',
- 'O agente monta um plano claro e segue até o fim.',
- 'O agente resolve com o mínimo de chamadas — sem voltas desnecessárias.',
+ 'The prompt clearly explains what the agent does and how it answers — organized rules, no improvisation.',
+ 'The agent has explicit limits on what it can NEVER do (safety and privacy).',
+ 'The prompt has the right length: neither too vague nor too long.',
+ 'There is a defined owner and the agent\'s access (OAuth) is under control.',
+ 'Of each call to the agent, how many it executed correctly.',
+ 'How many people actually use the agent (interaction volume).',
+ 'The agent is where the team works: Slack, Web and API.',
+ 'The agent was used recently or has been idle for weeks.',
+ 'The agent uses a good skill repertoire for each type of request.',
+ 'The agent\'s tools work without failures.',
+ 'The declared level matches real performance (no inflated grade).',
+ 'The tools the agent declares are actually used.',
+ 'The answer meets what was asked — without drifting off topic.',
+ 'The agent never invents: it only states what the sources confirm.',
+ 'The agent builds a clear plan and follows it through.',
+ 'The agent solves with minimal tool calls — no unnecessary detours.',
 ];
 function critScores(a){
   const lvl = parseInt(a.level.slice(1));
@@ -951,10 +951,10 @@ function critScores(a){
   const coerencia = Math.max(5, Math.round(100 - Math.abs((lvl*18+28) - sr)));
   const complexBase = Math.min(92, 45 + (a.mcp.length+a.costm+a.system)*7);
   const complexidade = Math.round(complexBase * (total>0 ? 1 : 0.35));
-  const valida = /valide|confirme|fonte|verifique|não invente|nao invente|sem inventar/i.test(a.instructions||'');
+  const valida = /validat|confirm|source|verify|never invent|don't invent/i.test(a.instructions||'');
   const relevancia = total ? Math.min(99, Math.round(0.5*sr + 0.35*Math.min(95,30+(a.skills||[]).length*22) + 0.25)) : 5;
   const fidelidade = total ? Math.min(99, Math.round(25 + (a.hasNever?20:0) + (valida?18:0) + (sr>=90?25:sr>=75?15:5))) : 20;
-  const temFormato = /formato|responda (em|com)|entregue/i.test(a.instructions||'');
+  const temFormato = /format|answer (in|with)|deliver|max\.? ?\d/i.test(a.instructions||'');
   const planejamento = Math.min(99, Math.round(15 + listas + (temFormato?18:0) + (lvl>=3?16:lvl*5)));
   const calls = (a.tools||[]).reduce((s,t)=>s+t.c,0);
   const eficiencia = total ? (calls/total<=1.2?94 : calls/total<=2?78 : calls/total<=3.5?55:35) : 5;
@@ -978,59 +978,59 @@ function ring(v, size){
     <div class="num"><b style="color:${col}">${v}</b><small>score</small></div></div>`;
 }
 
-/* ============================ RECEITAS ============================ */
+/* ============================ RECIPES ============================ */
 const PROMPT_FORMAT = [
- {s:'Identidade', test:a=>/você é|você atua|você será|especialista em/i.test(a.instructions)},
- {s:'Escopo', test:a=>/escopo|não responda|não execute|apenas pedidos|fora disso/i.test(a.instructions)},
- {s:'Regras numeradas', test:a=>/\d+\.\s/.test(a.instructions)},
- {s:'Regras NUNCA', test:a=>/NUNCA/i.test(a.instructions)},
- {s:'Formato de resposta', test:a=>/formato|responda (em|com)|entregue|máx\.? ?\d|máximo \d/i.test(a.instructions)},
- {s:'Exemplo', test:a=>/exemplo/i.test(a.instructions)},
+ {s:'Identity', test:a=>/you are|you act|you will be|expert in/i.test(a.instructions)},
+ {s:'Scope', test:a=>/scope|do not answer|do not execute|only requests|outside of that/i.test(a.instructions)},
+ {s:'Numbered rules', test:a=>/\d+\.\s/.test(a.instructions)},
+ {s:'NEVER rules', test:a=>/NEVER/i.test(a.instructions)},
+ {s:'Response format', test:a=>/format|answer (in|with)|deliver|max\.? ?\d/i.test(a.instructions)},
+ {s:'Example', test:a=>/example/i.test(a.instructions)},
 ];
 const DIR = [
- {remover:['instruções soltas, sem numeração nem prioridade'], adicionar:'Identidade clara + regras numeradas + 1 exemplo de resposta ideal', resumo:'Seu agente improvisa porque o prompt não diz COMO responder. Numere as regras e mostre um exemplo de resposta pronta.'},
- {remover:[], adicionar:'Seção "NUNCA": nunca expor PII, nunca agir sem confirmação, nunca compartilhar fora do time', resumo:'Seu agente não tem limites de segurança. Adicione a seção NUNCA com 3 proibições explícitas.'},
- {remover:['trechos que repetem a mesma instrução com palavras diferentes'], adicionar:'Uma instrução por regra, sem repetição', resumo:'O prompt está fora do tamanho ideal. Corte as repetições — cada regra aparece uma vez só.'},
- {remover:[], adicionar:'Dono definido + OAuth reduzido ao mínimo necessário', resumo:'Ninguém responde por este agente. Defina o dono oficial e restrinja o acesso.'},
- {remover:[], adicionar:'Corrigir o passo onde a execução falha (veja a evidência)', resumo:'Seu agente falha demais ao executar. Corrija exatamente o ponto de falha apontado pela evidência.'},
- {remover:[], adicionar:'Divulgar o agente com 3 exemplos práticos no canal do time', resumo:'Pouca gente usa seu agente. Divulgue com exemplos concretos do que ele resolve.'},
- {remover:[], adicionar:'Publicar o agente nos canais onde o time trabalha (Slack, Web, API)', resumo:'Seu agente não está onde o time está. Publique nos canais que o time já usa.'},
- {remover:[], adicionar:'Decisão: reativar com propósito claro ou aposentar', resumo:'Seu agente está parado. Decida: dê um propósito novo ou aposente de vez.'},
- {remover:[], adicionar:'Mapa simples: qual skill usar para cada tipo de pedido', resumo:'Seu agente repete a mesma habilidade. Ensine quando usar cada skill.'},
- {remover:[], adicionar:'Corrigir a ferramenta com maior taxa de falha (veja a evidência)', resumo:'Uma ferramenta derruba seu resultado. Corrija a ferramenta com mais falhas.'},
- {remover:[], adicionar:'Realinhar o nível declarado com o desempenho real', resumo:'O nível declarado não bate com a realidade. Recalibre para o nível que o agente realmente entrega.'},
- {remover:['ferramentas declaradas que nunca são usadas'], adicionar:'Declarar só o que é usado', resumo:'Seu agente declara mais ferramentas do que usa. Enxugue a lista.'},
- {remover:['respostas que fogem do pedido original'], adicionar:'Escopo explícito + 1 exemplo completo de resposta por tipo de pedido', resumo:'Seu agente entrega resposta fora do assunto. Defina o escopo e mostre um exemplo de resposta ideal.'},
- {remover:['afirmações sem fonte'], adicionar:'Regra de fidelidade: só afirmar o que a ferramenta retornou — se não souber, diga que não sabe', resumo:'Seu agente inventa quando não sabe. Adicione a regra: só afirmar o que a fonte confirma.'},
- {remover:[], adicionar:'Plano de execução: 1. entender → 2. escolher ferramenta → 3. executar → 4. conferir resultado', resumo:'Seu agente age sem plano. Adicione os 4 passos de execução e peça para seguir a ordem.'},
- {remover:[], adicionar:'Regra de economia: usar a ferramenta certa uma vez; repetir só se falhar', resumo:'Seu agente chama ferramentas demais. Adicione a regra de eficiência: uma chamada por tarefa.'},
+ {remover:['loose instructions, without numbering or priority'], adicionar:'Clear identity + numbered rules + 1 ideal answer example', resumo:'Your agent improvises because the prompt does not say HOW to answer. Number the rules and show an example of a ready answer.'},
+ {remover:[], adicionar:'A "NEVER" section: never expose PII, never act without confirmation, never share outside the team', resumo:'Your agent has no safety limits. Add the NEVER section with 3 explicit prohibitions.'},
+ {remover:['passages that repeat the same instruction in different words'], adicionar:'One instruction per rule, no repetition', resumo:'The prompt is outside the ideal length. Cut the repetitions — each rule appears only once.'},
+ {remover:[], adicionar:'Defined owner + OAuth reduced to the necessary minimum', resumo:'Nobody is accountable for this agent. Define the official owner and restrict access.'},
+ {remover:[], adicionar:'Fix the step where execution fails (see the evidence)', resumo:'Your agent fails too often when executing. Fix exactly the failure point the evidence shows.'},
+ {remover:[], adicionar:'Promote the agent with 3 practical examples in the team channel', resumo:'Few people use your agent. Promote it with concrete examples of what it solves.'},
+ {remover:[], adicionar:'Publish the agent in the channels where the team works (Slack, Web, API)', resumo:'Your agent is not where the team is. Publish it in the channels the team already uses.'},
+ {remover:[], adicionar:'Decision: reactivate with a clear purpose or retire', resumo:'Your agent is idle. Decide: give it a new purpose or retire it for good.'},
+ {remover:[], adicionar:'A simple map: which skill to use for each type of request', resumo:'Your agent repeats the same skill. Teach when to use each skill.'},
+ {remover:[], adicionar:'Fix the tool with the highest failure rate (see the evidence)', resumo:'One tool drags your result down. Fix the tool with the most failures.'},
+ {remover:[], adicionar:'Realign the declared level with real performance', resumo:'The declared level does not match reality. Recalibrate to the level the agent actually delivers.'},
+ {remover:['declared tools that are never used'], adicionar:'Declare only what is used', resumo:'Your agent declares more tools than it uses. Trim the list.'},
+ {remover:['answers that drift from the original request'], adicionar:'Explicit scope + 1 complete answer example per request type', resumo:'Your agent delivers off-topic answers. Define the scope and show an example of an ideal answer.'},
+ {remover:['claims without a source'], adicionar:'Faithfulness rule: only state what the tool returned — if you don\'t know, say you don\'t know', resumo:'Your agent invents when it does not know. Add the rule: only state what the source confirms.'},
+ {remover:[], adicionar:'Execution plan: 1. understand → 2. choose tool → 3. execute → 4. check the result', resumo:'Your agent acts without a plan. Add the 4 execution steps and ask it to follow the order.'},
+ {remover:[], adicionar:'Efficiency rule: use the right tool once; repeat only on failure', resumo:'Your agent calls too many tools. Add the efficiency rule: one call per task.'},
 ];
 const COMPORTAMENTO = [
- 'instruções vagas — sem estrutura, o agente improvisa e devolve clichês',
- 'sem regras NUNCA — pode agir fora do escopo em pedidos manipulados',
- 'prompt fora do tamanho ideal — vago ou inchado, desperdiça contexto',
- 'governança frágil — OAuth sem regras duras ou dono pouco claro',
- 'falhas frequentes de execução — o usuário refaz o pedido',
- 'baixa adoção — pouca gente usa ou sabe que existe',
- 'presente em poucos canais — não está onde o time trabalha',
- 'parado há semanas — sem uso recente registrado',
- 'repertório de skills repetitivo — mesma habilidade para tudo',
- 'ferramenta com alta taxa de falha derruba o resultado',
- 'nível declarado não bate com o desempenho real',
- 'declara ferramentas que nunca usa',
- 'resposta fora do assunto — o usuário repete o pedido',
- 'inventa dados que as fontes não confirmam',
- 'executa sem plano — chama ferramentas em ordem aleatória',
- 'chamadas demais — dobra o tempo de entrega',
+ 'vague instructions — without structure, the agent improvises and returns clichés',
+ 'no NEVER rules — may act out of scope on manipulated requests',
+ 'prompt outside the ideal length — vague or bloated, wastes context',
+ 'fragile governance — OAuth without hard rules or unclear owner',
+ 'frequent execution failures — the user redoes the request',
+ 'low adoption — few people use it or know it exists',
+ 'present in few channels — not where the team works',
+ 'idle for weeks — no recent use recorded',
+ 'repetitive skill repertoire — the same skill for everything',
+ 'a tool with a high failure rate drags the result down',
+ 'declared level does not match real performance',
+ 'declares tools it never uses',
+ 'off-topic answer — the user repeats the request',
+ 'invents data the sources do not confirm',
+ 'executes without a plan — calls tools in random order',
+ 'too many calls — doubles delivery time',
 ];
 function promptRules(a){
   const p = (a.purpose||'').toLowerCase();
   const regras = [];
-  if (/doc|documenta|tabela|modelo/.test(p)) regras.push('Documente com: fonte, dono, frequência e SLA — nada inventado.');
-  if (/sql|query|consulta/.test(p)) regras.push('Valide a consulta com a ferramenta antes de responder.');
-  if (/cost|finops|forecast|previs/.test(p)) regras.push('Sempre mostre o ganho estimado (R$ ou %) antes da recomendação.');
-  if (/erro|pipeline|monitor/.test(p)) regras.push('Classifique o erro (infra, dados ou código) antes de sugerir correção.');
-  regras.push('Se faltar informação, pergunte — nunca invente.');
+  if (/doc|document|table|model/.test(p)) regras.push('Document with: source, owner, frequency and SLA — never invent.');
+  if (/sql|query/.test(p)) regras.push('Validate the query with the tool before answering.');
+  if (/cost|finops|forecast|projec/.test(p)) regras.push('Always show the estimated gain (R$ or %) before the recommendation.');
+  if (/error|pipeline|monitor/.test(p)) regras.push('Classify the error (infra, data or code) before suggesting a fix.');
+  regras.push('If information is missing, ask — never invent.');
   return regras.slice(0,3);
 }
 function suggestedPromptText(a){
@@ -1047,24 +1047,23 @@ function suggestedPromptText(a){
   }
   if (lvl<=2 || weak3.includes(0)){
     const rules = promptRules(a).map((r,i)=>`${i+1}. ${r}`).join('\n');
-    txt += `\n\nRegras:\n${rules}\n\nFormato da resposta:\n1. Resultado direto (máx. 3 linhas).\n2. O que foi feito e com qual fonte.\n3. Próximo passo sugerido.`;
+    txt += `\n\nRules:\n${rules}\n\nResponse format:\n1. Direct result (max. 3 lines).\n2. What was done and with which source.\n3. Suggested next step.`;
   }
-  if (!/exemplo/i.test(a.instructions)) txt += '\n\nExemplo:\n"pergunta do usuário" → resposta ideal: resultado direto + fonte + próximo passo.';
-  if (weak3.includes(1)) txt += '\n\nNUNCA acesse dados de PII sem máscara.\nNUNCA compartilhe resultados fora dos canais do time.';
+  if (!/example/i.test(a.instructions)) txt += '\n\nExample:\n"user question" → ideal answer: direct result + source + next step.';
+  if (weak3.includes(1)) txt += '\n\nNEVER access PII data without masking.\nNEVER share results outside the team channels.';
   return txt;
 }
 function highlightAntes(a){
   const s = critScores(a);
   const weakSet = s.map((v,i)=>({v,i})).sort((x,y)=>x.v-y.v).slice(0,3).map(o=>o.i);
   let txt = esc(a.instructions);
-  if (weakSet.includes(1)) txt = txt.replace(/\b(PII|dados|compartilh\w*|resultados|produção)\b/gi, m=>`<b class="t-red">${m}</b>`);
+  if (weakSet.includes(1)) txt = txt.replace(/\b(PII|data|shar\w*|results|production)\b/gi, m=>`<b class="t-red">${m}</b>`);
   if (weakSet.includes(0)) txt = txt.split('\n').map(l=>{
-      if (l.trim() && !/^\d+\.|NUNCA|Regras:/.test(l.trim())) return `<b class="t-amber">${l}</b>`;
+      if (l.trim() && !/^\d+\.|NEVER|Rules:/.test(l.trim())) return `<b class="t-amber">${l}</b>`;
       return l;
     }).join('\n');
   return txt;
 }
-
 function afterScores(a){
   const s = critScores(a);
   const idx = s.map((v,i)=>({v,i})).sort((x,y)=>x.v-y.v).slice(0,3).map(o=>o.i);
@@ -1074,37 +1073,37 @@ function gerarSkill(a, weakI){
   const nome = a.name.toLowerCase().replace(/\s+/g,'-') + '-v2';
   return {
     nome,
-    gatilho: `critério "${CRIT[weakI].s}" abaixo de 60`,
+    gatilho: `criterion "${CRIT[weakI].s}" below 60`,
     passos: [
-      `Aplicar a receita: ${DIR[weakI].adicionar.toLowerCase()}.`,
-      `Regerar o prompt no formato canônico (6 seções: identidade, escopo, regras numeradas, NUNCA, formato de resposta, exemplo).`,
-      `Rodar os evals (RAGAS + DeepEval) e comparar antes × depois.`,
-      `Se o score subir ≥ 10 pts, propor MR; se não, voltar ao passo 1.`,
+      `Apply the recipe: ${DIR[weakI].adicionar.toLowerCase()}.`,
+      `Regenerate the prompt in the canonical format (6 sections: identity, scope, numbered rules, NEVER, response format, example).`,
+      `Run the evals (RAGAS + DeepEval) and compare before × after.`,
+      `If the score rises ≥ 10 pts, propose an MR; if not, go back to step 1.`,
     ],
-    quando: `a régua mostrar ${a.name} com ${CRIT[weakI].s} < 60 ou sem uso há 14 dias`,
-    confere: `score geral ≥ ${Math.min(99, overallScore(a)+10)} e sucesso real sem queda`,
+    quando: `when the ruler shows ${a.name} with ${CRIT[weakI].s} < 60 or unused for 14 days`,
+    confere: `overall score ≥ ${Math.min(99, overallScore(a)+10)} and real success with no drop`,
   };
 }
 
-/* ============================ ESTEIRA (estágios) ============================ */
+/* ============================ THE LINE (stages) ============================ */
 const STAGES = [
- {e:'🛬', n:'Ingestão & Transporte', d:'o dado entra no ambiente e chega ao time'},
- {e:'🧹', n:'Qualidade & Confiabilidade', d:'o dado é validado, auditado e vira verdade'},
- {e:'🏗️', n:'Modelagem & Otimização', d:'o dado vira estrutura, documentação e eficiência'},
- {e:'📊', n:'Consumo & Analytics', d:'o dado vira insight, dashboard e resposta'},
- {e:'💰', n:'Produto & Decisão', d:'o dado vira ação, economia e resultado'},
+ {e:'🛬', n:'Ingestion & Transport', d:'the data enters the environment and reaches the team'},
+ {e:'🧹', n:'Quality & Reliability', d:'the data is validated, audited and becomes truth'},
+ {e:'🏗️', n:'Modeling & Optimization', d:'the data becomes structure, documentation and efficiency'},
+ {e:'📊', n:'Consumption & Analytics', d:'the data becomes insight, dashboard and answer'},
+ {e:'💰', n:'Product & Decision', d:'the data becomes action, savings and results'},
 ];
 function stageOf(a){
   const t = (a.purpose||'').toLowerCase();
-  if (/etl|ingest|pipeline|erro|log|alarm/.test(t)) return 0;
-  if (/qualidade|quality|schema|audit|anomalia/.test(t)) return 1;
-  if (/insight|explora|dashboard|kpi|métrica|prompt/.test(t)) return 3;
-  if (/finops|previs|gasto|proje|forecast/.test(t)) return 4;
+  if (/etl|ingest|pipeline|error|log|alarm/.test(t)) return 0;
+  if (/quality|schema|audit|anomal/.test(t)) return 1;
+  if (/insight|explor|dashboard|kpi|metric|prompt/.test(t)) return 3;
+  if (/finops|forecast|projec|spend/.test(t)) return 4;
   return 2;
 }
 
 /* ============================ GATES ============================ */
-const GATES = ['instruções estruturadas (identidade + regras)','regras de segurança "NUNCA" no prompt','em uso ativo (interações recentes)','sucesso ≥ 80% nas execuções','repertório variado de skills (≥ 2)','governança completa (dono = editor + OAuth seguro)'];
+const GATES = ['structured instructions (identity + rules)','"NEVER" safety rules in the prompt','in active use (recent interactions)','success ≥ 80% in executions','varied skill repertoire (≥ 2)','complete governance (owner = editor + safe OAuth)'];
 function gateDone(a, i){
   switch(i){
     case 0: return (a.instructions||'').length > 100;
@@ -1118,26 +1117,26 @@ function gateDone(a, i){
 }
 function gatePlan(a, gi){
   const plans = [
-    'Reestruturar as instruções: identidade + regras numeradas + exemplos (receita pronta no passo 3).',
-    'Adicionar a seção "NUNCA": PII, ações sem confirmação e compartilhamento fora do time.',
-    'Reativar o uso: divulgar propósito + exemplos nos canais do time.',
-    'Investigar as falhas de execução e corrigir a ferramenta problemática.',
-    'Mapear skills por cenário e incentivar repertório variado.',
-    'Garantir dono = editor e OAuth restrito ao mínimo necessário.',
+    'Restructure the instructions: identity + numbered rules + examples (recipe ready in step 3).',
+    'Add the "NEVER" section: PII, actions without confirmation and sharing outside the team.',
+    'Reactivate usage: promote the purpose + examples in the team channels.',
+    'Investigate the execution failures and fix the problematic tool.',
+    'Map skills by scenario and encourage a varied repertoire.',
+    'Ensure owner = editor and OAuth restricted to the necessary minimum.',
   ];
   return plans[gi] || '';
 }
 
-/* ============================ MATCH (pergunta → agente) ============================ */
-const STOPW = ['the','for','how','what','which','where','more','much','need','know','want','my','mine','you','this','that','today','yesterday','can','could','have','do','some','any','para','como','quero','preciso','que','uma','com','dos','das','meu','minha','um','por','isso','dessa','desse'];
+/* ============================ MATCH (question → agent) ============================ */
+const STOPW = ['the','for','how','what','which','where','more','much','need','know','want','my','mine','you','this','that','today','yesterday','can','could','have','do','some','any'];
 function duelAnswer(a){
   const lvl = parseInt(a.level.slice(1));
   const sr = a.interactions.total? Math.round(100*a.interactions.success/a.interactions.total):null;
   const tool = (a.tools||[])[0];
   const entrega = (a.purpose||'').toLowerCase().replace(/\.$/,'');
-  if (lvl>=4) return `✅ Eu resolvo isto: ${entrega}. Executo com ${tool?tool.n:'as ferramentas do registro'} e valido antes de responder — ${sr}% de sucesso real nas últimas interações.`;
-  if (lvl>=2) return `✅ ${a.purpose} — tenho ${sr}% de sucesso real, mas parte do fluxo ainda não valida automaticamente antes de responder.`;
-  return `🤔 ${entrega}, porém meu histórico é baixo (${sr===null?'sem uso registrado':sr+'% de sucesso'}) — a resposta tende a ser genérica e o pedido precisa de retrabalho.`;
+  if (lvl>=4) return `✅ I solve this: ${entrega}. I run it with ${tool?tool.n:'the registered tools'} and validate before answering — ${sr}% real success in the last interactions.`;
+  if (lvl>=2) return `✅ ${a.purpose} — I have ${sr}% real success, but part of the flow still does not validate automatically before answering.`;
+  return `🤔 ${entrega}, though my track record is low (${sr===null?'no recorded use':sr+'% success'}) — the answer tends to be generic and the request needs rework.`;
 }
 let matchTimer = null;
 function debouncedMatch(){ clearTimeout(matchTimer); matchTimer = setTimeout(matchAgentes, 600); }
@@ -1163,33 +1162,33 @@ function matchAgentes(){
     const ins = (a.instructions||'').toLowerCase();
     let score = 0; const why = [];
     words.forEach(w=>{
-      if (p.includes(w)) { score += 3; why.push(`propósito cobre "${w}"`); }
-      else if (th.includes(w)) { score += 2; why.push(`tema "${w}"`); }
-      else if (sk.includes(w)) { score += 2; why.push(`skill ligada a "${w}"`); }
-      else if (tl.includes(w)) { score += 1.5; why.push(`usa a ferramenta ${w}`); }
-      else if (ins.includes(w) && w.length>=4) { score += 1; why.push(`menciona "${w}" no prompt`); }
+      if (p.includes(w)) { score += 3; why.push(`purpose covers "${w}"`); }
+      else if (th.includes(w)) { score += 2; why.push(`theme "${w}"`); }
+      else if (sk.includes(w)) { score += 2; why.push(`skill related to "${w}"`); }
+      else if (tl.includes(w)) { score += 1.5; why.push(`uses the tool ${w}`); }
+      else if (ins.includes(w) && w.length>=4) { score += 1; why.push(`mentions "${w}" in the prompt`); }
       else if (w.length>=4) { const pre=w.slice(0,4);
-        if (p.includes(pre)) { score += 1.5; why.push(`relacionado a "${pre}…"`); }
-        else if (th.includes(pre)) { score += 1; why.push(`tema próximo de "${pre}…"`); }
-        else if (sk.includes(pre)) { score += 1; why.push(`skill próxima de "${pre}…"`); }
-        else if (ins.includes(pre)) { score += 0.8; why.push(`prompt próximo de "${pre}…"`); }
+        if (p.includes(pre)) { score += 1.5; why.push(`related to "${pre}…"`); }
+        else if (th.includes(pre)) { score += 1; why.push(`theme close to "${pre}…"`); }
+        else if (sk.includes(pre)) { score += 1; why.push(`skill close to "${pre}…"`); }
+        else if (ins.includes(pre)) { score += 0.8; why.push(`prompt close to "${pre}…"`); }
       }
     });
     const DOMS = [
-      {re:/cost|finops|forecast|previs|custo/i, ws:['cost','custo','custos','armazenamento','gasto','cortar','gastar','econom','dbu','finops','preco','preço','budget','orcamento','orçamento'], nome:'custo & finops'},
-      {re:/sql|query|consulta|otimiza/i, ws:['sql','query','queries','lenta','lento','plano','consulta','consultas','otimizar','desempenho','faturamento'], nome:'SQL & otimização'},
-      {re:/quality|schema|dq|audit|qualidade/i, ws:['quality','regra','regras','anomalia','inconsistência','inconsistencia','duplicada','qualidade','falharam'], nome:'qualidade de dados'},
-      {re:/documenta|dbt|docs/i, ws:['documentar','documentation','docs','dbt','descrever','catálogo','catalogo','documentacao','documentação'], nome:'documentação'},
-      {re:/pipeline|erro|log|monitor|incidente/i, ws:['erro','erros','pipeline','log','logs','falha','falhou','incidente','monitorar','caiu'], nome:'monitoramento & erros'},
-      {re:/sql|query|pipeline|quality|schema|data|dado/i, ws:['tabela','tabelas','pedidos','cresceu','crescer','aumentou','dobrou','duplicou','grew','grow','size','storage','linhas','registros'], nome:'tabelas & crescimento'},
+      {re:/cost|finops|forecast|projec|spend/i, ws:['cost','costs','storage','spend','spending','cut','save','econom','dbu','finops','price','budget'], nome:'cost & finops'},
+      {re:/sql|query|optim/i, ws:['sql','query','queries','slow','plan','optimize','performance','billing'], nome:'SQL & optimization'},
+      {re:/quality|schema|dq|audit/i, ws:['quality','rule','rules','anomaly','inconsist','duplicate','failed'], nome:'data quality'},
+      {re:/document|dbt|docs/i, ws:['document','documentation','docs','dbt','describe','catalog'], nome:'documentation'},
+      {re:/pipeline|error|log|monitor|incident/i, ws:['error','errors','pipeline','log','logs','fail','failed','incident','monitor','down'], nome:'monitoring & errors'},
+      {re:/sql|query|pipeline|quality|schema|data/i, ws:['table','tables','orders','grew','grow','grown','increased','doubled','duplicated','size','storage','rows','records'], nome:'tables & growth'},
     ];
     DOMS.forEach(d=>{
-      if (d.ws.some(w=>words.includes(w)) && d.re.test(p)) { score += 4; why.push(`domínio de ${d.nome}`); }
+      if (d.ws.some(w=>words.includes(w)) && d.re.test(p)) { score += 4; why.push(`domain of ${d.nome}`); }
     });
     return {a, score, why};
   });
   const hits = scored.filter(s=>s.score>0).sort((x,y)=>y.score-x.score);
-  if (!hits.length) { el.innerHTML = '<div class="card"><p class="small muted">Nenhum agente cobre esse pedido — tente outro tema ou clique numa máquina da esteira para ver quem opera cada estágio.</p></div>'; renderDuelEsteira(null, q); return; }
+  if (!hits.length) { el.innerHTML = '<div class="card"><p class="small muted">No agent covers this request — try another topic or click a machine on the line to see who operates each stage.</p></div>'; renderDuelEsteira(null, q); return; }
   const maxS = hits[0].score;
   const ranked = hits.slice(0,3).map(o=>{
     const match = Math.round(100*o.score/maxS);
@@ -1198,49 +1197,49 @@ function matchAgentes(){
   }).sort((x,y)=>y.final-x.final);
   renderDuelEsteira(ranked[0], q);
   el.innerHTML = `<div class="card mb-8 match-card win">
-      <div class="card-t"><h3 class="t-teal">🎯 Melhor match: ${ranked[0].a.emoji} ${ranked[0].a.name} — ${ranked[0].final}/100 de aderência</h3></div>
-      <p class="tiny muted">A pergunta foi comparada com o <b>propósito, temas, skills e ferramentas</b> de ${AGENTS.length} agentes + o desempenho real. Aderência = 70% match + 30% qualidade.</p>
+      <div class="card-t"><h3 class="t-teal">🎯 Best match: ${ranked[0].a.emoji} ${ranked[0].a.name} — ${ranked[0].final}/100 adherence</h3></div>
+      <p class="tiny muted">The question was compared with the <b>purpose, themes, skills and tools</b> of ${AGENTS.length} agents + real performance. Adherence = 70% match + 30% quality.</p>
     </div>` + ranked.map((r,i)=>{
     const sr = r.a.interactions.total? Math.round(100*r.a.interactions.success/r.a.interactions.total):null;
     return `<div class="card mb-8 match-card ${i===0?'win':''}">
       <div class="row">
         <span class="rank ${i===0?'t-teal':''}">#${i+1}</span>
         <div class="flex1" style="min-width:220px">
-          <div class="row" style="gap:6px"><b class="small">${r.a.emoji} ${r.a.name}</b>${r.a.used?'':'<span class="chip chip-idle">🪦 ocioso</span>'}</div>
+          <div class="row" style="gap:6px"><b class="small">${r.a.emoji} ${r.a.name}</b>${r.a.used?'':'<span class="chip chip-idle">🪦 idle</span>'}</div>
           <div class="tiny muted">${r.a.purpose}</div>
-          <div class="tiny mt-4"><b>Por quê:</b> ${r.why.slice(0,3).join(' · ')||'correlação com o pedido'}${r.qual<55?` <a class="link" href="#/receitas/${r.a.id}">receita →</a>`:''}</div>
+          <div class="tiny mt-4"><b>Why:</b> ${r.why.slice(0,3).join(' · ')||'correlation with the request'}${r.qual<55?` <a class="link" href="#/receitas/${r.a.id}">recipe →</a>`:''}</div>
         </div>
-        <div class="center">${ring(r.final, 64)}<div class="tiny muted bold mt-4">aderência</div></div>
+        <div class="center">${ring(r.final, 64)}<div class="tiny muted bold mt-4">adherence</div></div>
         <div class="tiny muted" style="min-width:110px;line-height:1.8">
           match: <b class="t-ink">${r.match}%</b><br>
-          qualidade: <b class="t-ink">${r.qual}</b><br>
-          sucesso real: <b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b>
+          quality: <b class="t-ink">${r.qual}</b><br>
+          real success: <b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b>
         </div>
         <div class="col">
-          <button class="btn btn-teal btn-sm" onclick="location.hash='#/profile/${r.a.id}'">conhecer →</button>
-          <button class="btn btn-ghost btn-xs" onclick="location.hash='#/perguntar/${r.a.id}'">como perguntar 💬</button>
+          <button class="btn btn-teal btn-sm" onclick="location.hash='#/profile/${r.a.id}'">meet →</button>
+          <button class="btn btn-ghost btn-xs" onclick="location.hash='#/perguntar/${r.a.id}'">how to ask 💬</button>
         </div>
       </div>
-      <div class="chat-sim n-teal"><b class="tiny t-teal">RESPOSTA SIMULADA</b><br>${duelAnswer(r.a)}</div>
+      <div class="chat-sim n-teal"><b class="tiny t-teal">SIMULATED ANSWER</b><br>${duelAnswer(r.a)}</div>
     </div>`;
   }).join('');
   const full = AGENTS.map(a=>{
     const hit = ranked.find(r=>r.a.id===a.id);
     return {a, m: hit?hit.match:0, q: joinedScore(a).final, f: hit?hit.final:0};
   }).sort((x,y)=>(y.f-x.f) || (y.m-x.m));
-  const nota = f => f>=80?'🟢 muito perto':f>=60?'🟡 próximo':f>=40?'🟠 parcial':'🔴 distante';
+  const nota = f => f>=80?'🟢 very close':f>=60?'🟡 close':f>=40?'🟠 partial':'🔴 far';
   el.innerHTML += `
   <div class="card mt-12">
-    <div class="card-t"><h3>📋 Ranking de sugestão</h3><span class="sub">proximidade = 70% match + 30% qualidade do agente</span></div>
+    <div class="card-t"><h3>📋 Suggestion ranking</h3><span class="sub">proximity = 70% match + 30% agent quality</span></div>
     <div style="overflow-x:auto"><table>
-      <thead><tr><th>#</th><th>Agente</th><th>Nível</th><th>Correspondência</th><th>Nota</th><th style="width:30%">Proximidade com o que você precisa</th></tr></thead>
+      <thead><tr><th>#</th><th>Agent</th><th>Level</th><th>Match</th><th>Note</th><th style="width:30%">Proximity to what you need</th></tr></thead>
       <tbody>${full.map((r,i)=>{
         const sr = r.a.interactions.total? Math.round(100*r.a.interactions.success/r.a.interactions.total):null;
         return `<tr class="clickable" onclick="location.hash='#/profile/${r.a.id}'">
           <td>${i===0?'🥇':i===1?'🥈':i===2?'🥉':i+1}</td>
-          <td><b>${r.a.emoji} ${r.a.name}</b>${r.a.used?'':' <span class="chip chip-idle">🪦 desuso</span>'}</td>
+          <td><b>${r.a.emoji} ${r.a.name}</b>${r.a.used?'':' <span class="chip chip-idle">🪦 unused</span>'}</td>
           <td><span class="chip c-${r.a.level.toLowerCase()}">${r.a.level}</span></td>
-          <td class="small">${r.m}%${sr!==null?' · sucesso real '+sr+'%':''}</td>
+          <td class="small">${r.m}%${sr!==null?' · real success '+sr+'%':''}</td>
           <td><b class="${notaCls(r.f)}">${r.f}</b></td>
           <td><div class="row" style="gap:8px">
             <div class="track flex1" style="height:8px"><div class="fill ${notaFill(r.f)}" style="--w:${r.f}%"></div></div>
@@ -1258,31 +1257,30 @@ function renderDuelEsteira(winner, q){
   const temPergunta = q && q.length >= 3;
   el.innerHTML = `
   <div class="card">
-    <div class="card-t"><h3>🏭 A esteira em ação</h3><span class="sub">${temPergunta ? 'a pergunta acendeu a máquina certa' : 'clique numa máquina para ver os operadores — ou escreva o que você precisa'}</span></div>
+    <div class="card-t"><h3>🏭 The line in action</h3><span class="sub">${temPergunta ? 'the question lit the right machine' : 'click a machine to see the operators — or write what you need'}</span></div>
     <div class="esteira">
       ${STAGES.map((st,si)=>{
         const members = AGENTS.filter(a=>stageOf(a)===si);
         const winnerHere = winner && stageOf(winner.a)===si;
         const selHere = !temPergunta && esteiraSel===si;
         const dim = (temPergunta && !winnerHere) || (!temPergunta && esteiraSel!==null && !selHere);
-        return `<div onclick="selEsteira(${si})" class="machine ${winnerHere?'win':selHere?'sel':''} ${dim?'dim':''}" role="button" tabindex="0" aria-label="Máquina ${si+1}: ${st.n}" onkeydown="if(event.key==='Enter')selEsteira(${si})">
+        return `<div onclick="selEsteira(${si})" class="machine ${winnerHere?'win':selHere?'sel':''} ${dim?'dim':''}" role="button" tabindex="0" aria-label="Machine ${si+1}: ${st.n}" onkeydown="if(event.key==='Enter')selEsteira(${si})">
           <div class="mname ${winnerHere?'t-green':selHere?'t-red':''}">⚙️ ${st.n.split(' & ')[0]}</div>
           <div class="msub">${st.n.split(' & ')[1]||''}</div>
           <div class="mchips">
             ${members.map(a=>`<span class="chip ${winner&&winner.a.id===a.id?'chip-ok':''}">${a.emoji} ${a.name.split(' ')[0]}${winner&&winner.a.id===a.id?' ⭐':''}</span>`).join('')}
             ${members.length?'':'<span class="tiny muted">—</span>'}
           </div>
-          <div class="mops">${members.length} ${members.length===1?'operador':'operadores'}</div>
+          <div class="mops">${members.length} ${members.length===1?'operator':'operators'}</div>
           <div class="conveyor"></div>
         </div>`;
       }).join('')}
     </div>
-    ${winner ? `<p class="line-note bold t-green">⭐ Sua pergunta passa pela máquina <b>${STAGES[stageOf(winner.a)].n}</b> — é onde o <b>${winner.a.emoji} ${winner.a.name}</b> opera. As máquinas apagadas não participam deste pedido.</p>`
-     : esteiraSel!==null ? `<p class="line-note bold t-red">🔴 Máquina selecionada: <b>${STAGES[esteiraSel].n}</b> — operadores listados abaixo. Para o Prisma sugerir, é só escrever o que você precisa.</p>`
-     : `<p class="line-note muted">📦 A matéria-prima (sua pergunta) ainda não entrou na linha — clique numa máquina para inspecionar os operadores ou escreva o que precisa.</p>`}
+    ${winner ? `<p class="line-note bold t-green">⭐ Your question goes through the machine <b>${STAGES[stageOf(winner.a)].n}</b> — where the <b>${winner.a.emoji} ${winner.a.name}</b> operates. The dimmed machines do not take part in this request.</p>`
+     : esteiraSel!==null ? `<p class="line-note bold t-red">🔴 Selected machine: <b>${STAGES[esteiraSel].n}</b> — operators listed below. For Prisma to suggest, just write what you need.</p>`
+     : `<p class="line-note muted">📦 The raw material (your question) has not entered the line yet — click a machine to inspect the operators or write what you need.</p>`}
   </div>`;
 }
-
 function selEsteira(si){
   esteiraSel = si;
   renderDuelEsteira(null,'');
@@ -1295,56 +1293,56 @@ function renderStationAgents(si){
   const ranked = [...members].sort((a,b)=>joinedScore(b).final-joinedScore(a).final);
   const st = STAGES[si];
   el.innerHTML = `<div class="card mb-12" style="border-left:3px solid var(--red)">
-      <b class="small">👷 Operadores da máquina ${si+1} · ${st.n}</b>
-      <p class="tiny muted mt-4">${st.d}. ${members.length ? 'Estes são os agentes alocados neste estágio da esteira:' : 'Nenhum agente alocado nesta máquina — ela está parada.'}</p>
+      <b class="small">👷 Operators of machine ${si+1} · ${st.n}</b>
+      <p class="tiny muted mt-4">${st.d}. ${members.length ? 'These are the agents allocated to this stage of the line:' : 'No agent allocated to this machine — it is stopped.'}</p>
     </div>` + (ranked.length ? ranked.map((a,i)=>{
     const j = joinedScore(a); const sr = a.interactions.total? Math.round(100*a.interactions.success/a.interactions.total):null;
     return `<div class="card mb-8 ${i===0?'match-card win':''}">
       <div class="row">
-        ${i===0?'<span class="chip chip-ok">🌟 melhor da máquina</span>':''}
+        ${i===0?'<span class="chip chip-ok">🌟 best of the machine</span>':''}
         <span style="font-size:15px">${a.emoji}</span>
         <div class="flex1" style="min-width:220px">
-          <div class="row" style="gap:6px"><b class="small">${a.name}</b><span class="chip c-${a.level.toLowerCase()}">${a.level}</span>${a.used?'':' <span class="chip chip-idle">🪦 ocioso</span>'}</div>
+          <div class="row" style="gap:6px"><b class="small">${a.name}</b><span class="chip c-${a.level.toLowerCase()}">${a.level}</span>${a.used?'':' <span class="chip chip-idle">🪦 idle</span>'}</div>
           <div class="tiny muted mt-4">${a.purpose}</div>
         </div>
-        <div class="tiny muted" style="min-width:100px;line-height:1.8">score: <b class="t-ink">${j.final}</b><br>sucesso real: <b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b></div>
-        <button class="btn btn-teal btn-sm" onclick="location.hash='#/profile/${a.id}'">conhecer →</button>${j.final<55?` <a class="link" href="#/receitas/${a.id}">receita →</a>`:''}
+        <div class="tiny muted" style="min-width:100px;line-height:1.8">score: <b class="t-ink">${j.final}</b><br>real success: <b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b></div>
+        <button class="btn btn-teal btn-sm" onclick="location.hash='#/profile/${a.id}'">meet →</button>${j.final<55?` <a class="link" href="#/receitas/${a.id}">recipe →</a>`:''}
       </div>
     </div>`;
-  }).join('') : '<div class="card"><p class="small muted">Máquina parada — nenhum operador alocado. Escreva o que você precisa e o Prisma dirá se outro agente cobre este estágio.</p></div>');
+  }).join('') : '<div class="card"><p class="small muted">Machine stopped — no operator allocated. Write what you need and Prisma will say whether another agent covers this stage.</p></div>');
 }
-</script></script>
+</script>
 <script>
-/* ============================ JORNADAS + ROUTER ============================ */
+/* ============================ FLOWS + ROUTER ============================ */
 const SCREENS = {panorama:'s-panorama',encontrar:'s-encontrar',profile:'s-profile',perguntar:'s-perguntar',regua:'s-regua',inventario:'s-inventario',qualidade:'s-qualidade',receitas:'s-receitas',acomp:'s-acomp',arch:'s-arch'};
 const USER_KEYS = ['encontrar','profile','perguntar','regua'];
 const MAKER_KEYS = ['inventario','qualidade','receitas','acomp'];
 const AGENT_SCREENS = ['profile','perguntar','regua','qualidade','receitas','acomp'];
 const JOURNEYS = {
-  user:{ emoji:'🧭', cap:'jornada de quem usa', cls:'user', steps:[
-    {key:'encontrar', icon:'🎯', label:'Encontre', sub:'o agente certo, em segundos'},
-    {key:'profile', icon:'🪪', label:'Conheça', sub:'identidade e confiabilidade'},
-    {key:'perguntar', icon:'💬', label:'Pergunte', sub:'o formato exato da pergunta'},
-    {key:'regua', icon:'📏', label:'Compare', sub:'maturidade × desempenho real'},
+  user:{ emoji:'🧭', cap:'user side', cls:'user', steps:[
+    {key:'encontrar', icon:'🎯', label:'Find', sub:'the right agent, in seconds'},
+    {key:'profile', icon:'🪪', label:'Meet', sub:'identity and trustworthiness'},
+    {key:'perguntar', icon:'💬', label:'Ask', sub:'the exact question format'},
+    {key:'regua', icon:'📏', label:'Compare', sub:'maturity × real performance'},
   ]},
-  maker:{ emoji:'🧑‍💻', cap:'jornada de quem cria', cls:'maker', steps:[
-    {key:'inventario', icon:'📇', label:'Inventário', sub:'o catálogo sob controle'},
-    {key:'qualidade', icon:'🔬', label:'Qualidade', sub:'as seis métricas de avaliação'},
-    {key:'receitas', icon:'🍳', label:'Receitas', sub:'do diagnóstico à correção'},
-    {key:'acomp', icon:'📈', label:'Acompanhe', sub:'o antes e o depois, em evidência'},
+  maker:{ emoji:'🧑‍💻', cap:'creator side', cls:'maker', steps:[
+    {key:'inventario', icon:'📇', label:'Inventory', sub:'the catalog under control'},
+    {key:'qualidade', icon:'🔬', label:'Quality', sub:'the six evaluation metrics'},
+    {key:'receitas', icon:'🍳', label:'Recipes', sub:'from diagnosis to fix'},
+    {key:'acomp', icon:'📈', label:'Track', sub:'the before and after, in evidence'},
   ]}
 };
 const SCREEN_META = {
-  panorama:{k:'🔺 visão da operação', t:'Sua operação de agentes, em um só lugar.', s:'O Prisma lê o catálogo e as interações em produção, avalia 16 critérios — padrões RAGAS e DeepEval — e entrega clareza: para quem usa, o agente certo e a pergunta precisa; para quem cria, o gargalo e a correção.'},
-  encontrar:{k:'🧭 o agente certo, em segundos', t:'Encontre o agente certo', s:'Descreva a necessidade em linguagem natural. A pergunta aciona a esteira e devolve o agente mais aderente — cruzando propósito, skills, ferramentas e o desempenho real em produção.'},
-  profile:{k:'🧭 a ficha completa, antes de usar', t:'Conheça o agente', s:'Identidade, entregas, canais e confiabilidade: o retrato completo do agente antes de colocá-lo em produção.'},
-  perguntar:{k:'🧭 a pergunta no formato exato', t:'O formato ideal de pergunta', s:'Cada agente responde a um molde. Veja o modelo exato para <b id="pergName"></b> — o que incluir, como estruturar e o que ele nunca fará. Copie e adapte.'},
-  regua:{k:'🧭 maturidade × desempenho real', t:'Compare na régua', s:'Maturidade declarada contra sucesso real: cada bolha é um agente — o tamanho mede o uso, a altura mede a confiança.'},
-  inventario:{k:'🧑‍💻 o catálogo sob controle', t:'Inventário dos agentes', s:'Cada agente declara um nível N0–N5. A régua traduz cada nível — e o catálogo revela quem entrega e quem virou peso morto.'},
-  qualidade:{k:'🧑‍💻 a avaliação em seis métricas', t:'Qualidade da resposta', s:'Seis métricas do padrão iFood de avaliação (DeepEval): como o agente planeja, usa as ferramentas, fundamenta e conclui. Cada número deriva do registro real — em produção, vem da esteira de eval.'},
-  receitas:{k:'🧑‍💻 do diagnóstico à correção', t:'Receitas de melhoria', s:'O diagnóstico revela o critério frágil, a evidência sustenta a decisão, e a receita entrega o prompt antes × depois — com a skill pronta para iterar.'},
-  acomp:{k:'🧑‍💻 o antes e o depois, em evidência', t:'Acompanhe a evolução', s:'A mudança surtiu efeito? A vida do agente em eventos reais, a tendência semanal, os gates e o caminho até o próximo nível.'},
-  arch:{k:'🗺️ referência técnica', t:'Como o Prisma funciona', s:'O raio-x inteiro deriva de duas fontes: o catálogo de agentes (perfil e governança) e as interações em produção (uso e desempenho). Nada de nota subjetiva — cada critério é uma conta em cima desses dados.'},
+  panorama:{k:'🔺 operation view', t:'Your agent operation, in one place.', s:'Prisma reads the catalog and production interactions, evaluates 16 criteria — RAGAS and DeepEval standards — and delivers clarity: for those who use, the right agent and the precise question; for those who create, the bottleneck and the fix.'},
+  encontrar:{k:'🧭 the right agent, in seconds', t:'Find the right agent', s:'Describe the need in natural language. The question triggers the line and returns the most adherent agent — crossing purpose, skills, tools and real production performance.'},
+  profile:{k:'🧭 the full profile, before use', t:'Meet the agent', s:'Identity, deliveries, channels and trustworthiness: the complete picture before putting it into production.'},
+  perguntar:{k:'🧭 the question in its exact format', t:'The ideal question format', s:'Each agent answers to a mold. Here is the exact model for <b id="pergName"></b> — what to include, how to structure it and what it will never do. Copy and adapt.'},
+  regua:{k:'🧭 maturity × real performance', t:'Compare on the ruler', s:'Declared maturity against real success: each bubble is an agent — size measures use, height measures trust.'},
+  inventario:{k:'🧑‍💻 the catalog under control', t:'Agent inventory', s:'Each agent declares an N0–N5 level. The ruler translates each level — and the catalog reveals who delivers and who became dead weight.'},
+  qualidade:{k:'🧑‍💻 the assessment in six metrics', t:'Answer quality', s:'Six metrics of iFood\'s evaluation standard (DeepEval): how the agent plans, uses tools, grounds claims and concludes. Each number derives from the real record — in production, it comes from the eval pipeline.'},
+  receitas:{k:'🧑‍💻 from diagnosis to fix', t:'Improvement recipes', s:'The diagnosis reveals the fragile criterion, the evidence backs the decision, and the recipe delivers the before × after prompt — with the skill ready to iterate.'},
+  acomp:{k:'🧑‍💻 the before and after, in evidence', t:'Track the evolution', s:'Did the change pay off? The agent\'s life in real events, the weekly trend, the gates and the road to the next level.'},
+  arch:{k:'🗺️ technical reference', t:'How Prisma works', s:'The whole x-ray derives from two sources: the agent catalog (profile and governance) and production interactions (use and performance). No subjective grade — every criterion is a calculation on top of that data.'},
 };
 let persona = 'user';
 let curAgentId = 'sql-ninja';
@@ -1372,7 +1370,7 @@ function renderTopbar(key){
   if (!M){ bar.innerHTML = ''; return; }
   const J = journeyOf(key);
   const sel = AGENT_SCREENS.includes(key)
-    ? `<select id="agentSel" class="select" aria-label="Escolher agente" onchange="location.hash='#/${key}/'+this.value">${AGENTS.map(x=>`<option value="${x.id}">${x.emoji} ${x.name} (${x.level})</option>`).join('')}</select>` : '';
+    ? `<select id="agentSel" class="select" aria-label="Choose agent" onchange="location.hash='#/${key}/'+this.value">${AGENTS.map(x=>`<option value="${x.id}">${x.emoji} ${x.name} (${x.level})</option>`).join('')}</select>` : '';
   const kicker = `<span class="tb-kicker ${J?J.cls:'ref'}">${M.k}</span>`;
   bar.innerHTML = `
     <div class="tb-row">
@@ -1396,10 +1394,10 @@ function renderJnav(key){
   }
   if (next){
     const href = AGENT_SCREENS.includes(next.key) ? '#/'+next.key+'/'+curAgentId : '#/'+next.key;
-    nextHtml = `<button class="next ${J.cls}" onclick="location.hash='${href}'">${next.icon} próximo: ${next.label}<small>${next.sub}</small></button>`;
+    nextHtml = `<button class="next ${J.cls}" onclick="location.hash='${href}'">${next.icon} next: ${next.label}<small>${next.sub}</small></button>`;
   } else {
     const other = J.cls==='user' ? 'maker' : 'user';
-    nextHtml = `<button class="next ${J.cls}" onclick="setPersona('${other}')">${other==='user'?'🧭 ver o lado de quem usa':'🧑‍💻 ver o lado de quem cria'}<small>${other==='user'?'encontrar e perguntar com precisão':'avaliar e elevar o padrão'}</small></button>`;
+    nextHtml = `<button class="next ${J.cls}" onclick="setPersona('${other}')">${other==='user'?'🧭 see the user side':'🧑‍💻 see the creator side'}<small>${other==='user'?'find and ask with precision':'assess and raise the bar'}</small></button>`;
   }
   el.innerHTML = prevHtml + nextHtml;
 }
@@ -1437,34 +1435,34 @@ function route(){
 }
 window.addEventListener('hashchange', route);
 
-/* ============================ HELPERS DE COR ============================ */
+/* ============================ COLOR HELPERS ============================ */
 function srCls(sr){ return sr===null?'t-muted':sr>=85?'t-green':sr>=60?'t-amber':'t-red'; }
 function dotCls(sr){ return sr===null?'d-gray':sr>=85?'d-green':sr>=60?'d-amber':'d-red'; }
 function fillCls(v){ return v>=75?'f-green':v>=55?'f-amber':'f-red'; }
 function notaCls(f){ return f>=80?'t-green':f>=40?'t-amber':'t-red'; }
 function notaFill(f){ return f>=80?'f-green':f>=40?'f-amber':'f-red'; }
 
-/* ============================ PANORAMA ============================ */
+/* ============================ OVERVIEW ============================ */
 function dismissHi(){ const el=document.getElementById('prismaHi'); if(el) el.style.display='none'; }
 function renderPanorama(){
   document.getElementById('panAlerts').innerHTML = (RISK_AGENTS.length || ORPHAN_AGENTS.length) ? `
     <div class="note n-warn">
-      <b class="small t-amber">⚠️ Governança · pendências abertas</b>
+      <b class="small t-amber">⚠️ Governance · open pendings</b>
       <div class="wrap mt-8">
-        ${RISK_AGENTS.map(a=>`<span class="chip chip-bad click" onclick="location.hash='#/profile/${a.id}'">🚨 ${a.name}: OAuth sem regras NUNCA</span>`).join('')}
-        ${ORPHAN_AGENTS.map(a=>`<span class="chip chip-amber click" onclick="location.hash='#/profile/${a.id}'">👻 ${a.name}: órfão (editor ≠ dono)</span>`).join('')}
+        ${RISK_AGENTS.map(a=>`<span class="chip chip-bad click" onclick="location.hash='#/profile/${a.id}'">🚨 ${a.name}: OAuth without NEVER rules</span>`).join('')}
+        ${ORPHAN_AGENTS.map(a=>`<span class="chip chip-amber click" onclick="location.hash='#/profile/${a.id}'">👻 ${a.name}: orphan (editor ≠ owner)</span>`).join('')}
       </div></div>` : '';
 }
 
-/* ============================ PROFILE ============================ */
+/* ============================ MEET (profile) ============================ */
 function renderProfile(id){
   const a = AGENTS.find(x=>x.id===id) || AGENTS[0];
   rememberAgent(a.id);
   const sel = document.getElementById('agentSel');
   if (sel) sel.value = a.id;
   const sr = a.interactions.total ? Math.round(100*a.interactions.success/a.interactions.total) : null;
-  const entregas = a.skills.map(s=>SKILL_WHAT[s]||('usa a skill '+s));
-  const ASKS = {sql:'Qual foi o TPV de ontem por bandeira?', cost:'Qual a projeção de custo do mês?', quality:'Quais regras de qualidade falharam hoje?', documentation:'Documente a tabela de pagamentos.', dashboards:'Mostre o TPV semanal por região.', prompts:'Melhore meu prompt de análise.', monitoring:'Algum erro de pipeline nas últimas 2h?'};
+  const entregas = a.skills.map(s=>SKILL_WHAT[s]||('uses the skill '+s));
+  const ASKS = {sql:'What was yesterday\'s TPV by card brand?', cost:'What is the month\'s cost projection?', quality:'Which quality rules failed today?', documentation:'Document the payments table.', dashboards:'Show the weekly TPV by region.', prompts:'Improve my analysis prompt.', monitoring:'Any pipeline errors in the last 2h?'};
   document.getElementById('profBody').innerHTML = `
   <div class="profile-head">
     <div class="pe">${a.emoji}</div>
@@ -1473,130 +1471,130 @@ function renderProfile(id){
       <div class="pp">${a.purpose}.</div>
       <div class="chips">
         <span class="chip">${a.level} · ${levelName(a.level)}</span>
-        <span class="chip">${a.used?'● em uso':'🪦 ocioso'}</span>
+        <span class="chip">${a.used?'● in use':'🪦 idle'}</span>
         <span class="chip">${TYPE_NAMES[a.type]||a.type}</span>
       </div>
     </div>
-    <div class="kpi-big"><b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b><span>sucesso real<br>em produção</span></div>
+    <div class="kpi-big"><b class="${srCls(sr)}">${sr===null?'—':sr+'%'}</b><span>real success<br>in production</span></div>
   </div>
 
   <div class="card mt-16">
-    <div class="card-t"><h3>🪪 Ficha do agente</h3><span class="sub">quem é, de quem é, quando nasceu</span></div>
+    <div class="card-t"><h3>🪪 Agent profile</h3><span class="sub">who it is, whose it is, when it was born</span></div>
     <div class="meta-grid">
-      <div class="meta-cell"><b>👤 Dono</b><span>${a.owner.split('@')[0]}</span></div>
-      <div class="meta-cell"><b>🏢 Área</b><span>${(a.themes||[]).map(t=>TOPICS[t]||t).join(' · ')}</span></div>
-      <div class="meta-cell"><b>📅 Criado</b><span>${a.created}</span></div>
-      <div class="meta-cell"><b>🔄 Atualizado</b><span>${a.updated}${a.lastEditor!==a.owner?' <span class="t-amber">(por '+a.lastEditor.split('@')[0]+')</span>':''}</span></div>
-      <div class="meta-cell"><b>⏱️ Último uso</b><span>${a.lastMsg ? daysAgo(a.lastMsg)<=1?'hoje':daysAgo(a.lastMsg)+'d atrás' : 'nunca usado'}</span></div>
-      <div class="meta-cell"><b>👥 Pessoas</b><span>${a.users||0} usuários · ${a.interactions.total} interações</span></div>
+      <div class="meta-cell"><b>👤 Owner</b><span>${a.owner.split('@')[0]}</span></div>
+      <div class="meta-cell"><b>🏢 Area</b><span>${(a.themes||[]).map(t=>TOPICS[t]||t).join(' · ')}</span></div>
+      <div class="meta-cell"><b>📅 Created</b><span>${a.created}</span></div>
+      <div class="meta-cell"><b>🔄 Updated</b><span>${a.updated}${a.lastEditor!==a.owner?' <span class="t-amber">(by '+a.lastEditor.split('@')[0]+')</span>':''}</span></div>
+      <div class="meta-cell"><b>⏱️ Last use</b><span>${a.lastMsg ? daysAgo(a.lastMsg)<=1?'today':daysAgo(a.lastMsg)+'d ago' : 'never used'}</span></div>
+      <div class="meta-cell"><b>👥 People</b><span>${a.users||0} users · ${a.interactions.total} interactions</span></div>
     </div>
   </div>
 
   <div class="grid g-2 mt-16">
     <div class="card">
-      <div class="card-t"><h3>🎁 O que ele entrega</h3></div>
+      <div class="card-t"><h3>🎁 What it delivers</h3></div>
       <p class="small" style="line-height:1.8">${entregas.map(e=>'• '+e).join('<br>')}</p>
       <div class="wrap mt-12">
         ${a.skills.map(s=>`<span class="chip chip-ok">🎯 ${s}</span>`).join('')}
         ${a.oauth.map(o=>`<span class="chip chip-amber">🔐 ${o}</span>`).join('')}
       </div>
-      ${a.hasNever?'<p class="small t-green bold mt-12">🛡️ tem regras de segurança explícitas (NUNCA) no prompt</p>':(a.oauth.length?'<p class="small t-red bold mt-12">🚨 tem acesso OAuth sem regras NUNCA — risco de segurança</p>':'<p class="small muted mt-12">⚠️ sem regras NUNCA no prompt — confira o resultado antes de usar</p>')}
+      ${a.hasNever?'<p class="small t-green bold mt-12">🛡️ has explicit safety rules (NEVER) in the prompt</p>':(a.oauth.length?'<p class="small t-red bold mt-12">🚨 has OAuth access without NEVER rules — security risk</p>':'<p class="small muted mt-12">⚠️ no NEVER rules in the prompt — check the result before using it</p>')}
     </div>
     <div class="card">
-      <div class="card-t"><h3>🔌 Ferramentas & canais</h3><span class="sub">uso real registrado</span></div>
+      <div class="card-t"><h3>🔌 Tools & channels</h3><span class="sub">recorded real use</span></div>
       ${(a.tools||[]).length ? a.tools.map(t=>{
         const fail = t.f/t.c;
         return `<div class="hbar mb-8"><div class="lab">${t.n}</div>
           <div class="track"><div class="fill ${fail>.08?'f-red':'f-green'}" style="--w:${Math.round(100*t.c/Math.max(...a.tools.map(x=>x.c)))}%"></div></div>
-          <div class="val">${t.c} usos · ${t.f} falhas</div></div>`;
-      }).join('') : '<p class="small muted">nenhuma ferramenta usada ainda</p>'}
-      <div class="tiny muted bold mt-12 mb-8">ONDE ATENDE</div>
+          <div class="val">${t.c} uses · ${t.f} failures</div></div>`;
+      }).join('') : '<p class="small muted">no tools used yet</p>'}
+      <div class="tiny muted bold mt-12 mb-8">WHERE IT WORKS</div>
       <div class="wrap">
-        ${a.platforms.length ? a.platforms.map(p=>`<span class="chip chip-ok">💬 ${p}</span>`).join('') : '<span class="small muted">nenhum canal ativo</span>'}
+        ${a.platforms.length ? a.platforms.map(p=>`<span class="chip chip-ok">💬 ${p}</span>`).join('') : '<span class="small muted">no active channel</span>'}
       </div>
     </div>
   </div>
 
   <div class="card mt-16">
-    <div class="card-t"><h3>💬 Exemplos reais de interação</h3></div>
+    <div class="card-t"><h3>💬 Real interaction examples</h3></div>
     <div class="grid g-2">
       ${(a.tools||[]).length ? [0,1].map(ti=>{
         const t = a.tools[ti % a.tools.length];
         const ok = seeded(a.id+'ex'+ti) < (a.interactions.success/Math.max(1,a.interactions.total));
         return `<div class="chat-sim ${ok?'n-ok':'n-danger'}">
-          <b class="tiny ${ok?'t-teal':'t-red'}">EXEMPLO ${ti+1} · ${ok?'RESOLVIDO':'FALHOU'}</b><br>
+          <b class="tiny ${ok?'t-teal':'t-red'}">EXAMPLE ${ti+1} · ${ok?'SOLVED':'FAILED'}</b><br>
           👤 "${ASKS[a.themes[ti%a.themes.length]]||ASKS.sql}"<br>
-          🛠️ chamou <b>${t.n}</b> → ${ok?'sucesso ✓':'falha ✗'}<br>
-          🤖 ${ok?'entregou o resultado validado — interação concluída na primeira tentativa.':'não concluiu — o usuário precisou repetir o pedido.'}
+          🛠️ called <b>${t.n}</b> → ${ok?'success ✓':'failure ✗'}<br>
+          🤖 ${ok?'delivered the validated result — interaction completed on the first try.':'did not complete — the user had to repeat the request.'}
         </div>`;
-      }).join('') : '<p class="small muted">sem interações registradas para este agente</p>'}
+      }).join('') : '<p class="small muted">no recorded interactions for this agent</p>'}
     </div>
     <div class="note n-teal mt-12">
       <div class="row">
         <div class="flex1" style="min-width:220px">
-          <b class="small t-teal">💬 Quer usar o ${a.name}?</b>
-          <p class="tiny" style="line-height:1.6;margin-top:3px">Cada agente entende um formato de pedido. Veja o modelo ideal de pergunta — o que incluir, como estruturar e um exemplo pronto para copiar.</p>
+          <b class="small t-teal">💬 Want to use ${a.name}?</b>
+          <p class="tiny" style="line-height:1.6;margin-top:3px">Each agent understands a request format. See the ideal question model — what to include, how to structure it and a ready example to copy.</p>
         </div>
-        <button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${a.id}'">aprender a perguntar →</button>${overallScore(a)<55||!a.used?`<button class="btn btn-ghost btn-sm" onclick="location.hash='#/receitas/${a.id}'">ver a receita de melhoria →</button>`:`<button class="btn btn-ghost btn-sm" onclick="location.hash='#/qualidade/${a.id}'">ver a avaliação →</button>`}
+        <button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${a.id}'">learn how to ask →</button>${overallScore(a)<55||!a.used?`<button class="btn btn-ghost btn-sm" onclick="location.hash='#/receitas/${a.id}'">see the improvement recipe →</button>`:`<button class="btn btn-ghost btn-sm" onclick="location.hash='#/qualidade/${a.id}'">see the assessment →</button>`}
       </div>
     </div>
   </div>
 
   <details class="card mt-16">
-    <summary class="small bold" style="cursor:pointer">📜 Instruções completas (para quem cria) — clique para abrir</summary>
+    <summary class="small bold" style="cursor:pointer">📜 Full instructions (for creators) — click to open</summary>
     <div class="code mt-8">${esc(a.instructions)}</div>
   </details>`;
 }
 
-/* ============================ PERGUNTAR (passo 3 do usuário) ============================ */
+/* ============================ ASK (user step 3) ============================ */
 function pergExample(a){
   const map = {
-    sql:'Preciso do TPV de ontem por bandeira, comparado com a média dos últimos 7 dias. Quero uma tabela curta e o número principal destacado no final.',
-    cost:'Qual a projeção de custo do mês? Compare com o orçado e aponte o maior desvio, com o valor em R$.',
-    quality:'Quais regras de qualidade falharam hoje na tabela de pedidos? Liste a regra, o campo e o motivo da falha.',
-    documentation:'Documente a tabela de pagamentos para o catálogo do time: descrição, dono, frequência de atualização e SLAs.',
-    dashboards:'Monte um painel executivo da semana com as 3 métricas principais e a tendência de cada uma.',
-    prompts:'Meu prompt de análise de custo está confuso. Reescreva com regras numeradas e um exemplo de resposta ideal.',
-    monitoring:'O pipeline de pedidos falhou às 3h. Qual o erro, a causa provável e quem deve corrigir?',
+    sql:'I need yesterday\'s TPV by card brand, compared with the average of the last 7 days. I want a short table and the main number highlighted at the end.',
+    cost:'What is the month\'s cost projection? Compare with the budget and point out the biggest deviation, with the value in R$.',
+    quality:'Which quality rules failed today on the orders table? List the rule, the field and the failure reason.',
+    documentation:'Document the payments table for the team catalog: description, owner, update frequency and SLAs.',
+    dashboards:'Build an executive weekly dashboard with the 3 main metrics and the trend of each one.',
+    prompts:'My cost analysis prompt is confusing. Rewrite it with numbered rules and an ideal answer example.',
+    monitoring:'The orders pipeline failed at 3am. What is the error, the likely cause and who should fix it?',
   };
   return map[a.themes[0]] || map.sql;
 }
 function pergIncluir(a){
   const p = (a.purpose||'').toLowerCase();
   const items = [];
-  if (/sql|query|consulta/.test(p)) items.push(['📊 o dado', 'nome da tabela ou área de dados + o período que interessa']);
-  if (/cost|finops|previs|custo/.test(p)) items.push(['📅 a janela', 'período da análise e o valor de referência para comparar']);
-  if (/qualidade|quality|schema/.test(p)) items.push(['🗂️ o alvo', 'tabela ou coluna a validar + a regra de negócio']);
-  if (/doc|documenta/.test(p)) items.push(['📄 o objeto', 'tabela ou modelo a documentar + quem vai ler']);
-  if (/pipeline|erro|log|monitor/.test(p)) items.push(['🛠️ o incidente', 'nome do pipeline, horário da falha e mensagem de erro (se tiver)']);
-  if (/dashboard|kpi|insight/.test(p)) items.push(['🎯 o objetivo', 'a decisão que o painel vai apoiar + quem vai consumir']);
-  items.push(['📏 o formato', 'como quer receber: tabela, lista, gráfico ou texto curto']);
-  items.push(['⚖️ o contexto', 'uma frase do porquê isso importa — ajuda o agente a priorizar']);
+  if (/sql|query/.test(p)) items.push(['📊 the data', 'table name or data area + the period that matters']);
+  if (/cost|finops|forecast|projec/.test(p)) items.push(['📅 the window', 'analysis period and the reference value to compare']);
+  if (/qualit|schema/.test(p)) items.push(['🗂️ the target', 'table or column to validate + the business rule']);
+  if (/doc|document/.test(p)) items.push(['📄 the object', 'table or model to document + who will read it']);
+  if (/pipeline|error|log|monitor/.test(p)) items.push(['🛠️ the incident', 'pipeline name, failure time and error message (if any)']);
+  if (/dashboard|kpi|metric|insight/.test(p)) items.push(['🎯 the goal', 'the decision the dashboard will support + who will consume it']);
+  items.push(['📏 the format', 'how you want to receive it: table, list, chart or short text']);
+  items.push(['⚖️ the context', 'one sentence on why it matters — helps the agent prioritize']);
   return items.slice(0,5);
 }
 function pergNunca(a){
-  const m = (a.instructions||'').match(/NUNCA[^\n]*/gi) || [];
-  const rules = m.slice(0,2).map(r=>r.replace(/^NUNCA\s*/,'nunca ').toLowerCase().replace(/\.$/,''));
-  if (!rules.length) rules.push('este agente não tem regras NUNCA — confira você mesmo o resultado antes de repassar');
+  const m = (a.instructions||'').match(/NEVER[^\n]*/gi) || [];
+  const rules = m.slice(0,2).map(r=>r.replace(/^NEVER\s*/,'never ').toLowerCase().replace(/\.$/,''));
+  if (!rules.length) rules.push('this agent has no NEVER rules — check the result yourself before passing it on');
   return rules;
 }
 const PERG_TIPS = {
-  0:{do:'pergunte em uma frase direta, sem deixar implícito o que espera', dont:'não escreva parágrafos — o agente improvisa quando o pedido é solto'},
-  1:{do:'evite pedir acesso a dados sensíveis ou ações sem confirmação', dont:'não peça para ele burlar limites de segurança'},
-  2:{do:'vá direto ao ponto: um pedido por pergunta', dont:'não repita a mesma coisa com palavras diferentes'},
-  3:{do:'pergunte a quem responde pelo agente se algo sair do esperado', dont:'não assuma que o acesso dele está restrito'},
-  4:{do:'confira o resultado antes de repassar para a frente', dont:'não use a resposta direto no processo crítico'},
-  5:{do:'pergunte mesmo assim — o agente precisa de uso para evoluir', dont:'não espere resposta perfeita nos primeiros pedidos'},
-  6:{do:'use o canal onde ele está publicado', dont:'não procure por fora dos canais do time'},
-  7:{do:'confirme com o criador se o agente ainda é mantido', dont:'não baseie decisão em um agente parado'},
-  8:{do:'descreva o tipo de tarefa para ele escolher a skill certa', dont:'não misture dois pedidos de naturezas diferentes'},
-  9:{do:'peça para ele mostrar a evidência de cada passo', dont:'não aceite "não consegui" sem o motivo'},
-  10:{do:'compare a resposta com o nível declarado do agente', dont:'não espere nível N5 de um agente N1'},
-  11:{do:'pergunte o que as ferramentas dele cobrem de verdade', dont:'não peça o que o agente declara mas não usa'},
-  12:{do:'deixe o objetivo explícito na primeira frase', dont:'não mude de assunto no meio do pedido'},
-  13:{do:'peça a fonte de cada afirmação', dont:'não trate a resposta como verdade absoluta'},
-  14:{do:'aceite o plano que ele propor e confira passo a passo', dont:'não peça "tudo de uma vez" sem ordem'},
-  15:{do:'um pedido, uma resposta — evite emendar perguntas', dont:'não force várias idas e vindas'},
+  0:{do:'ask in one direct sentence, without leaving implicit what you expect', dont:'don\'t write paragraphs — the agent improvises when the request is loose'},
+  1:{do:'avoid asking for sensitive data access or actions without confirmation', dont:'don\'t ask it to bypass safety limits'},
+  2:{do:'go straight to the point: one request per question', dont:'don\'t repeat the same thing with different words'},
+  3:{do:'ask whoever is accountable for the agent if something goes off', dont:'don\'t assume its access is restricted'},
+  4:{do:'check the result before passing it on', dont:'don\'t use the answer directly in a critical process'},
+  5:{do:'ask anyway — the agent needs usage to evolve', dont:'don\'t expect a perfect answer in the first requests'},
+  6:{do:'use the channel where it is published', dont:'don\'t look outside the team channels'},
+  7:{do:'confirm with the creator whether the agent is still maintained', dont:'don\'t base a decision on an idle agent'},
+  8:{do:'describe the task type so it picks the right skill', dont:'don\'t mix two requests of different natures'},
+  9:{do:'ask it to show the evidence of each step', dont:'don\'t accept "I couldn\'t" without the reason'},
+  10:{do:'compare the answer with the agent\'s declared level', dont:'don\'t expect N5 level from an N1 agent'},
+  11:{do:'ask what its tools actually cover', dont:'don\'t request what the agent declares but doesn\'t use'},
+  12:{do:'make the goal explicit in the first sentence', dont:'don\'t change subject mid-request'},
+  13:{do:'ask for the source of every claim', dont:'don\'t treat the answer as absolute truth'},
+  14:{do:'accept the plan it proposes and check it step by step', dont:'don\'t ask for "everything at once" without an order'},
+  15:{do:'one request, one answer — avoid chaining questions', dont:'don\'t force several back-and-forths'},
 };
 function renderPerguntar(id){
   const a = AGENTS.find(x=>x.id===id) || AGENTS[0];
@@ -1609,39 +1607,39 @@ function renderPerguntar(id){
   const weak = s.map((v,i)=>({v,i})).sort((x,y)=>x.v-y.v).slice(0,3).filter(o=>o.v<70).map(o=>PERG_TIPS[o.i]);
   const sr = a.interactions.total ? Math.round(100*a.interactions.success/a.interactions.total) : null;
   const warnings = [];
-  if (!a.used) warnings.push({cls:'n-warn', html:`🪦 Este agente está <b>ocioso</b> — antes de depender dele, confirme com o criador se ainda é mantido.`});
-  if (sr!==null && sr<60) warnings.push({cls:'n-warn', html:`⚠️ A taxa de sucesso real é <b>${sr}%</b> — confira o resultado antes de repassar.`});
-  if (sr!==null && sr>=85) warnings.push({cls:'n-ok', html:`✅ Confiável: <b>${sr}%</b> de sucesso real nas últimas interações.`});
+  if (!a.used) warnings.push({cls:'n-warn', html:`🪦 This agent is <b>idle</b> — before depending on it, confirm with the creator whether it is still maintained.`});
+  if (sr!==null && sr<60) warnings.push({cls:'n-warn', html:`⚠️ The real success rate is <b>${sr}%</b> — check the result before passing it on.`});
+  if (sr!==null && sr>=85) warnings.push({cls:'n-ok', html:`✅ Trustworthy: <b>${sr}%</b> real success in the last interactions.`});
   const example = pergExample(a);
   document.getElementById('pergBody').innerHTML = `
   <div class="q-template">
     <div class="q-sec">
       <div class="qn qn-teal">📋</div>
       <div class="flex1">
-        <b>1 · Inclua na pergunta</b>
+        <b>1 · Include in the question</b>
         <ul>${pergIncluir(a).map(i=>`<li><b>${i[0]}</b> — ${i[1]}</li>`).join('')}</ul>
       </div>
     </div>
     <div class="q-sec">
       <div class="qn qn-teal">🧱</div>
       <div class="flex1">
-        <b>2 · Estruture assim</b>
-        <p class="small muted mt-8"><b class="t-teal">Contexto</b> (o que é / onde) → <b class="t-teal">Pedido</b> (o que você precisa) → <b class="t-teal">Formato</b> (como quer receber). Três frases bastam — o ${a.name} entende pedidos nesse molde.</p>
+        <b>2 · Structure it like this</b>
+        <p class="small muted mt-8"><b class="t-teal">Context</b> (what / where) → <b class="t-teal">Request</b> (what you need) → <b class="t-teal">Format</b> (how you want it). Three sentences are enough — ${a.name} understands requests in this mold.</p>
       </div>
     </div>
     <div class="q-sec">
       <div class="qn qn-red">🚫</div>
       <div class="flex1">
-        <b>3 · O que ele não vai fazer</b>
+        <b>3 · What it will not do</b>
         <ul>${pergNunca(a).map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
       </div>
     </div>
     <div class="q-sec">
       <div class="qn qn-teal">✨</div>
       <div class="flex1">
-        <b>4 · Exemplo pronto — copie e adapte</b>
+        <b>4 · Ready example — copy and adapt</b>
         <div class="copy-block"><span class="cb-text" id="qex">${esc(example)}</span>
-          <button class="copy-btn" onclick="copyBlock()">📋 copiar</button>
+          <button class="copy-btn" onclick="copyBlock()">📋 copy</button>
         </div>
         ${warnings.length?warnings.map(w=>`<div class="note ${w.cls} mt-12">${w.html}</div>`).join(''):''}
       </div>
@@ -1650,25 +1648,25 @@ function renderPerguntar(id){
     <div class="q-sec">
       <div class="qn qn-amber">💡</div>
       <div class="flex1">
-        <b>5 · Dicas rápidas para este agente</b>
+        <b>5 · Quick tips for this agent</b>
         <ul>${weak.map(w=>`<li>${w.do} · <span class="t-red">${w.dont}</span></li>`).join('')}</ul>
       </div>
     </div>`:''}
   </div>
   <div class="row mt-12">
-    <button class="btn btn-ghost btn-sm" onclick="location.hash='#/profile/${a.id}'">← ver a ficha do ${a.name}</button>
-    <button class="btn btn-ghost btn-sm" onclick="location.hash='#/regua'">📏 comparar na régua</button>
+    <button class="btn btn-ghost btn-sm" onclick="location.hash='#/profile/${a.id}'">← see the profile of ${a.name}</button>
+    <button class="btn btn-ghost btn-sm" onclick="location.hash='#/regua'">📏 compare on the ruler</button>
   </div>`;
 }
 function copyBlock(){
   const el = document.getElementById('qex');
   navigator.clipboard && navigator.clipboard.writeText(el.textContent.trim()).then(()=>{
     const btn = document.querySelector('.copy-block .copy-btn');
-    if (btn){ btn.textContent='✅ copiado!'; setTimeout(()=>btn.textContent='📋 copiar',1600); }
+    if (btn){ btn.textContent='✅ copied!'; setTimeout(()=>btn.textContent='📋 copy',1600); }
   });
 }
 
-/* ============================ RÉGUA ============================ */
+/* ============================ RULER ============================ */
 let lvSel = 'all';
 function toggleLv(k){
   lvSel = k;
@@ -1707,11 +1705,11 @@ function renderRegua(param){
     out += `<text x="${x}" y="${y+4}" font-size="10" text-anchor="middle" font-weight="800" fill="#263238" opacity="${isMe?1:.6}" onclick="location.hash='#/regua/${a.id}'">${a.emoji}</text>`;
     if (isMe){
       out += `<circle cx="${x}" cy="${y}" r="${r+7}" fill="none" stroke="#0C7C6B" stroke-width="2.5" stroke-dasharray="5,4"/>`;
-      out += `<text x="${x}" y="${y-r-10}" font-size="9" font-weight="800" fill="#0C7C6B" text-anchor="middle">VOCÊ ESTÁ AQUI</text>`;
+      out += `<text x="${x}" y="${y-r-10}" font-size="9" font-weight="800" fill="#0C7C6B" text-anchor="middle">YOU ARE HERE</text>`;
     }
   });
-  out += `<text x="${L}" y="${T-8}" font-size="8.5" fill="#78909C">% sucesso ↑</text>`;
-  out += `<text x="${R}" y="${B+30}" font-size="8.5" fill="#78909C" text-anchor="end">maturidade →</text>`;
+  out += `<text x="${L}" y="${T-8}" font-size="8.5" fill="#78909C">% success ↑</text>`;
+  out += `<text x="${R}" y="${B+30}" font-size="8.5" fill="#78909C" text-anchor="end">maturity →</text>`;
   document.getElementById('reguaScatter').innerHTML = out;
   const j = joinedScore(me);
   const scores = [...list].sort((a,b)=>joinedScore(b).final-joinedScore(a).final);
@@ -1728,49 +1726,49 @@ function renderRegua(param){
   const bestCrit = CRIT.map((_,i)=>Math.max(...list.map(a=>critScores(a)[i])));
   const gaps = myCrit.map((v,i)=>({i, gap:bestCrit[i]-v})).sort((x,y)=>y.gap-x.gap).slice(0,3);
   document.getElementById('reguaPosChip').innerHTML =
-    `<span class="chip chip-ok">🏆 #${pos} de ${scores.length}</span>
-     <span class="chip chip-gray">à frente de ${pct}% do registro</span>`;
+    `<span class="chip chip-ok">🏆 #${pos} of ${scores.length}</span>
+     <span class="chip chip-gray">ahead of ${pct}% of the record</span>`;
   document.getElementById('reguaBench').innerHTML = `
     <div class="center mb-12">${ring(j.final, 92)}</div>
     <div class="hbar mb-8"><div class="lab">${me.name.split(' ')[0]}</div>
       <div class="track"><div class="fill ${fillCls(j.final)}" style="--w:${j.final}%"></div></div>
       <div class="val">${j.final}</div></div>
-    <div class="hbar mb-12"><div class="lab">Mediana</div>
+    <div class="hbar mb-12"><div class="lab">Median</div>
       <div class="track"><div class="fill f-gray" style="--w:${medScore}%"></div></div>
       <div class="val">${medScore}</div></div>
     ${upAvg!==null ? `<p class="small mb-12" style="line-height:1.6">
-      ${gapUp===0 ? '🎉 você já está no padrão do próximo nível' : `📈 <b>nível ${lvlUp[0].level} (média): ${upAvg}</b> — faltam <b>${gapUp} pts</b> para chegar lá`}</p>` : ''}
-    <b class="small" style="display:block;margin-bottom:6px">O que separa do topo (maiores gaps):</b>
+      ${gapUp===0 ? '🎉 you are already at the next level\'s standard' : `📈 <b>level ${lvlUp[0].level} (average): ${upAvg}</b> — <b>${gapUp} pts</b> to get there`}</p>` : ''}
+    <b class="small" style="display:block;margin-bottom:6px">What separates from the top (biggest gaps):</b>
     ${gaps.map(g=>`<div class="row" style="padding:6px 0;border-bottom:1px solid var(--line)">
       <span class="flex1 small"><b>${CRIT[g.i].s}</b> <span class="muted">— ${CRIT_DEF[g.i].slice(0,52)}…</span></span>
       <span class="bold t-red">-${g.gap} pts</span>
-      <a class="link" href="#/receitas/${me.id}">receita →</a></div>`).join('')}`;
+      <a class="link" href="#/receitas/${me.id}">recipe →</a></div>`).join('')}`;
   document.getElementById('reguaTable').innerHTML = scores.map(a=>{
     const jj = joinedScore(a);
     const isMe = a.id===me.id;
     const st = jj.final>=75?'chip-ok':jj.final>=55?'chip-warn':'chip-bad';
-    const stTxt = jj.final>=75?'🟢 forte':jj.final>=55?'🟡 atenção':'🔴 risco';
+    const stTxt = jj.final>=75?'🟢 strong':jj.final>=55?'🟡 attention':'🔴 risk';
     return `<tr class="clickable" onclick="location.hash='#/regua/${a.id}'">
       <td>${isMe?'👉':''} ${a.emoji} ${a.name}</td>
       <td><span class="chip c-${a.level.toLowerCase()}">${a.level}</span></td>
       <td>${jj.success===null?'—':jj.success+'%'}</td>
       <td><b>${jj.final}</b></td>
       <td><span class="chip ${st}">${stTxt}</span></td>
-      <td style="text-align:right"><button class="btn btn-ghost btn-xs" onclick="event.stopPropagation();location.hash='#/profile/${a.id}'">ficha →</button></td>
+      <td style="text-align:right"><button class="btn btn-ghost btn-xs" onclick="event.stopPropagation();location.hash='#/profile/${a.id}'">profile →</button></td>
     </tr>`;
   }).join('');
   const br = document.getElementById('reguaBridge');
   if (br) br.innerHTML = `
     <div class="note n-teal">
       <div class="row">
-        <div class="flex1"><b class="small t-teal">🔁 Fechando o ciclo</b>
-          <p class="tiny" style="margin-top:3px">${pos<=3?`O ${me.name} está bem posicionado — o próximo passo é usar. Aprenda a pedir do jeito que ele entende.`:`O ${me.name} está abaixo do esperado — a correção certa já está pronta no lado de quem cria.`}</p></div>
-        ${pos<=3?`<button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${me.id}'">aprender a perguntar →</button>`:`<button class="btn btn-teal btn-sm" onclick="location.hash='#/receitas/${me.id}'">abrir a receita →</button>`}
+        <div class="flex1"><b class="small t-teal">🔁 Closing the loop</b>
+          <p class="tiny" style="margin-top:3px">${pos<=3?`${me.name} is well positioned — the next step is to use it. Learn to ask the way it understands.`:`${me.name} is below expectations — the exact fix is ready on the creator side.`}</p></div>
+        ${pos<=3?`<button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${me.id}'">learn how to ask →</button>`:`<button class="btn btn-teal btn-sm" onclick="location.hash='#/receitas/${me.id}'">open the recipe →</button>`}
       </div>
     </div>`;
 }
 
-/* ============================ INVENTÁRIO ============================ */
+/* ============================ INVENTORY ============================ */
 let invLv = null, invCats = new Set(), invMine = false;
 function toggleMine(){
   invMine = !invMine;
@@ -1781,21 +1779,21 @@ function toggleMine(){
 }
 function renderInventario(){
   document.getElementById('invKpis').innerHTML = `
-    <div class="kpi"><div class="v">${AGENTS.length}</div><div class="l">agentes registrados</div><div class="t">catálogo em produção</div></div>
-    <div class="kpi"><div class="v">${Math.round(100*TOTAL_SUCC/TOTAL_INT)}%</div><div class="l">sucesso global</div><div class="t t-green">▲ no trimestre</div></div>
-    <div class="kpi"><div class="v">${AGENTS.length-IDLE.length}</div><div class="l">em uso</div><div class="t">${Math.round(100*(AGENTS.length-IDLE.length)/AGENTS.length)}% do catálogo</div></div>
-    <div class="kpi"><div class="v">${IDLE.length}</div><div class="l">ociosos</div><div class="t t-red">▼ alvo do diagnóstico</div></div>`;
+    <div class="kpi"><div class="v">${AGENTS.length}</div><div class="l">registered agents</div><div class="t">production catalog</div></div>
+    <div class="kpi"><div class="v">${Math.round(100*TOTAL_SUCC/TOTAL_INT)}%</div><div class="l">global success</div><div class="t t-green">▲ this quarter</div></div>
+    <div class="kpi"><div class="v">${AGENTS.length-IDLE.length}</div><div class="l">in use</div><div class="t">${Math.round(100*(AGENTS.length-IDLE.length)/AGENTS.length)}% of the catalog</div></div>
+    <div class="kpi"><div class="v">${IDLE.length}</div><div class="l">idle</div><div class="t t-red">▼ diagnosis target</div></div>`;
   document.getElementById('invLegend').innerHTML = `
-    <div class="card-t"><h3>🔤 A régua N0–N5</h3><span class="sub">o que cada nível significa — cada agente declara o seu</span></div>
+    <div class="card-t"><h3>🔤 The N0–N5 ruler</h3><span class="sub">what each level means — each agent declares its own</span></div>
     <div class="legend-grid">
       ${['N0','N1','N2','N3','N4','N5'].map(l=>{
         const d = {
-          N0:{n:'Ad-hoc', d:'Sem estrutura: prompt improvisado, sem regras — erra muito e não se explica.'},
-          N1:{n:'Estruturado', d:'Tem identidade e regras básicas — sabe o que é, mas ainda improvisa.'},
-          N2:{n:'Instrumentado', d:'Usa skills e ferramentas declaradas — executa bem as tarefas conhecidas.'},
-          N3:{n:'Medido (CI)', d:'Uso e erros medidos em produção — dá para saber se funciona de verdade.'},
-          N4:{n:'Otimizado', d:'Sucesso real alto e melhorias já aplicadas — entrega com consistência.'},
-          N5:{n:'Auto-corretivo', d:'Valida o próprio resultado e se corrige — o estado ideal.'},
+          N0:{n:'Ad-hoc', d:'No structure: improvised prompt, no rules — fails often and cannot explain itself.'},
+          N1:{n:'Structured', d:'Has identity and basic rules — knows what it is, but still improvises.'},
+          N2:{n:'Instrumented', d:'Uses declared skills and tools — executes known tasks well.'},
+          N3:{n:'Measured (CI)', d:'Use and errors measured in production — you can tell whether it really works.'},
+          N4:{n:'Optimized', d:'High real success and improvements already applied — delivers consistently.'},
+          N5:{n:'Self-correcting', d:'Validates its own result and corrects itself — the ideal state.'},
         }[l];
         return `<div class="legend-cell">
           <div class="row" style="gap:8px">
@@ -1806,11 +1804,11 @@ function renderInventario(){
         </div>`;
       }).join('')}
     </div>
-    <p class="tiny muted mt-8">O nível declarado no catálogo posiciona cada agente na escala · alertas de governança (OAuth, órfãos) ficam no Panorama</p>`;
+    <p class="tiny muted mt-8">The level declared in the catalog places each agent on the scale · governance alerts (OAuth, orphans) live in the Overview</p>`;
   const lf = document.getElementById('levelFilter');
   if (!lf.innerHTML) lf.innerHTML = ['N0','N1','N2','N3','N4','N5'].map(l=>
     `<span class="chip click c-${l.toLowerCase()}" onclick="invLv='${invLv===l?null:l}';renderInventario()">${l}</span>`).join('') +
-    `<span class="chip click" onclick="invLv=null;renderInventario()">todos</span>`;
+    `<span class="chip click" onclick="invLv=null;renderInventario()">all</span>`;
   document.querySelectorAll('#levelFilter .chip').forEach(c=>c.classList.toggle('on', invLv!==null && c.textContent===invLv));
   const cf = document.getElementById('invCats');
   if (!cf.innerHTML) cf.innerHTML = Object.entries(TOPICS).map(([k,v])=>
@@ -1826,40 +1824,40 @@ function renderInventario(){
     const sr = a.interactions.total ? Math.round(100*a.interactions.success/a.interactions.total) : null;
     const ov = overallScore(a);
     const mine = a.owner==='andressa.facundo@ifood.com.br';
-    return `<div class="agent-card" onclick="location.hash='#/qualidade/${a.id}'" role="button" tabindex="0" aria-label="Abrir qualidade de ${a.name}" onkeydown="if(event.key==='Enter')location.hash='#/qualidade/${a.id}'">
+    return `<div class="agent-card" onclick="location.hash='#/qualidade/${a.id}'" role="button" tabindex="0" aria-label="Open the quality of ${a.name}" onkeydown="if(event.key==='Enter')location.hash='#/qualidade/${a.id}'">
       <div class="top">
         <div class="emoji">${a.emoji}</div>
         <div class="flex1"><b>${a.name}</b>
-          <small>${a.themes.map(t=>TOPICS[t]).join(' · ')}${mine?' · <b class="t-amber">👤 seu</b>':''}</small></div>
+          <small>${a.themes.map(t=>TOPICS[t]).join(' · ')}${mine?' · <b class="t-amber">👤 yours</b>':''}</small></div>
         <span class="chip c-${a.level.toLowerCase()}">${a.level}</span>
       </div>
       <div class="purpose">${a.purpose}</div>
       <div class="meta">
-        <span class="sr-mini"><span class="dot ${dotCls(sr)}"></span>${sr===null?'sem uso':sr+'% sucesso'}</span>
-        <span class="chip ${a.used?'chip-ok':'chip-idle'}">${a.used?'em uso':'ocioso'}</span>
+        <span class="sr-mini"><span class="dot ${dotCls(sr)}"></span>${sr===null?'no use':sr+'% success'}</span>
+        <span class="chip ${a.used?'chip-ok':'chip-idle'}">${a.used?'in use':'idle'}</span>
         <span class="right">${ring(ov, 40)}</span>
       </div>
     </div>`;
-  }).join('') || '<div class="card" style="grid-column:1/-1"><p class="small muted">Nenhum agente com esses filtros.</p></div>';
+  }).join('') || '<div class="card" style="grid-column:1/-1"><p class="small muted">No agent matches these filters.</p></div>';
 }
 
-/* ============================ QUALIDADE (radar agent-eval iFood) ============================ */
+/* ============================ QUALITY (iFood agent-eval radar) ============================ */
 const EVALS_LIT = [
-  {i:14, nome:'Plan Quality', src:'DeepEval', orig:'estrutura do prompt: regras numeradas + formato de resposta declarado'},
-  {i:11, nome:'Plan Adherence', src:'DeepEval', orig:'ferramentas declaradas × uso real em produção'},
-  {i:9,  nome:'Tool Correctness', src:'DeepEval', orig:'falhas por chamada de ferramenta registradas'},
-  {i:13, nome:'Argument Correctness', src:'DeepEval', orig:'regras NUNCA + exigência de validar fontes no prompt'},
-  {i:4,  nome:'Task Completion', src:'DeepEval', orig:'taxa de execução correta em produção'},
-  {i:15, nome:'Step Efficiency', src:'DeepEval', orig:'chamadas de ferramenta ÷ interações'},
+  {i:14, nome:'Plan Quality', src:'DeepEval', orig:'prompt structure: numbered rules + declared response format'},
+  {i:11, nome:'Plan Adherence', src:'DeepEval', orig:'declared tools × real production use'},
+  {i:9,  nome:'Tool Correctness', src:'DeepEval', orig:'failures per registered tool call'},
+  {i:13, nome:'Argument Correctness', src:'DeepEval', orig:'NEVER rules + requirement to validate sources in the prompt'},
+  {i:4,  nome:'Task Completion', src:'DeepEval', orig:'correct execution rate in production'},
+  {i:15, nome:'Step Efficiency', src:'DeepEval', orig:'tool calls ÷ interactions'},
 ];
 function interpEval(i, v){
   const map = {
-    14: v>=75 ? 'Monta um plano claro antes de executar.' : v>=55 ? 'Planeja, mas o plano fica vago.' : 'Age sem plano — o caminho é improvisado.',
-    11: v>=75 ? 'Segue o plano que declara: as ferramentas prometidas são usadas de verdade.' : v>=55 ? 'Nem sempre usa o que declara.' : 'Declara ferramentas que não usa — o plano fica no papel.',
-    9:  v>=75 ? 'As ferramentas funcionam — poucas falhas por chamada.' : v>=55 ? 'Algumas falhas de ferramenta no meio do fluxo.' : 'Ferramentas falham com frequência — retrabalho.',
-    13: v>=75 ? 'Só afirma o que as fontes confirmam.' : v>=55 ? 'Quase sempre fundamenta, mas há lacunas de validação.' : 'Afirma sem evidência — precisa da regra de fidelidade.',
-    4:  v>=85 ? 'Completa a tarefa quase sempre.' : v>=60 ? 'Completa na maioria, com falhas pontuais.' : 'Falha com frequência — cada falha é retry e custo.',
-    15: v>=75 ? 'Resolve com o mínimo de chamadas.' : v>=55 ? 'Dá algumas voltas até resolver.' : 'Chama ferramentas demais — atrasa a entrega.',
+    14: v>=75 ? 'Builds a clear plan before executing.' : v>=55 ? 'Plans, but the plan stays vague.' : 'Acts without a plan — the path is improvised.',
+    11: v>=75 ? 'Follows the plan it declares: the promised tools are actually used.' : v>=55 ? 'Does not always use what it declares.' : 'Declares tools it does not use — the plan stays on paper.',
+    9:  v>=75 ? 'The tools work — few failures per call.' : v>=55 ? 'Some tool failures mid-flow.' : 'Tools fail often — rework.',
+    13: v>=75 ? 'Only states what the sources confirm.' : v>=55 ? 'Almost always grounded, but with validation gaps.' : 'Claims without evidence — needs the faithfulness rule.',
+    4:  v>=85 ? 'Completes the task almost always.' : v>=60 ? 'Completes most of the time, with occasional failures.' : 'Fails often — every failure is retry and cost.',
+    15: v>=75 ? 'Solves with minimal calls.' : v>=55 ? 'Takes a few detours to solve.' : 'Calls too many tools — delays delivery.',
   };
   return map[i] || '';
 }
@@ -1900,8 +1898,8 @@ function renderEvalRadar(a){
     out+=`<text x="${lx}" y="${ly+10}" font-size="9" font-weight="800" fill="#3C4A5A" text-anchor="${anchor}">${l2}</text>`;
   }
   out+=`<text x="${cx}" y="${cy-6}" text-anchor="middle" font-size="30" font-weight="900" fill="#17202B">${avg}</text>`;
-  out+=`<text x="${cx}" y="${cy+12}" text-anchor="middle" font-size="8" font-weight="800" letter-spacing="1" fill="#8495A3">EVAL MÉDIO</text>`;
-  document.getElementById('evalRadar').innerHTML = `<svg class="eval-radar" viewBox="0 0 ${size} ${size}" role="img" aria-label="Radar de avaliação com 6 métricas DeepEval">${out}</svg>`;
+  out+=`<text x="${cx}" y="${cy+12}" text-anchor="middle" font-size="8" font-weight="800" letter-spacing="1" fill="#8495A3">EVAL AVG</text>`;
+  document.getElementById('evalRadar').innerHTML = `<svg class="eval-radar" viewBox="0 0 ${size} ${size}" role="img" aria-label="Assessment radar with 6 DeepEval metrics">${out}</svg>`;
 }
 function renderQualidade(param){
   const sel = document.getElementById('agentSel');
@@ -1921,12 +1919,12 @@ function renderQualidade(param){
         <div class="track"><div class="fill ${fillCls(v)}" style="--w:${v}%"></div></div>
       </div>
       <div class="interp">${interpEval(e.i, v)}</div>
-      <div class="orig">derivado de: ${e.orig}</div>
+      <div class="orig">derived from: ${e.orig}</div>
     </div>`;
   }).join('');
 }
 
-/* ============================ RECEITAS ============================ */
+/* ============================ RECIPES ============================ */
 function renderReceitas(param){
   const sel = document.getElementById('agentSel');
   const a = AGENTS.find(x=>x.id===(param||(sel&&sel.value))) || AGENTS[0];
@@ -1945,78 +1943,78 @@ function renderReceitas(param){
   const before = critScores(a), after = afterScores(a);
   document.getElementById('evoHeader').innerHTML =
     `<span class="chip c-${a.level.toLowerCase()}">${a.level}</span>
-     <span class="chip chip-gray">hoje: <b class="t-ink">${ov}</b></span>
-     <span class="chip chip-ok">🎯 com 1 receita: ${novo}</span>`;
+     <span class="chip chip-gray">today: <b class="t-ink">${ov}</b></span>
+     <span class="chip chip-ok">🎯 with 1 recipe: ${novo}</span>`;
   const diag = semUso
-    ? `O <b>${a.name}</b> ${a.emoji} <b class="t-red">ainda não foi usado</b> — nenhuma interação desde a criação. O problema real é adoção, não qualidade do prompt.`
-    : `O <b>${a.name}</b> ${a.emoji} é forte em <b class="t-green">${CRIT[strong.i].s}</b> (${strong.v}/100), mas o gargalo é <b class="t-red">${CRIT[weak.i].s}</b> (${weak.v}/100): ${COMPORTAMENTO[weak.i]}.`;
+    ? `<b>${a.name}</b> ${a.emoji} <b class="t-red">has not been used yet</b> — no interaction since creation. The real problem is adoption, not prompt quality.`
+    : `<b>${a.name}</b> ${a.emoji} is strong at <b class="t-green">${CRIT[strong.i].s}</b> (${strong.v}/100), but the bottleneck is <b class="t-red">${CRIT[weak.i].s}</b> (${weak.v}/100): ${COMPORTAMENTO[weak.i]}.`;
   document.getElementById('receitaBody').innerHTML = `
   <div class="card mb-16">
-    <div class="card-t"><h3>1 · Diagnóstico</h3><span class="sub">em linguagem simples</span></div>
+    <div class="card-t"><h3>1 · Diagnosis</h3><span class="sub">in plain language</span></div>
     <div class="note n-info">
       ${diag}
-      <br><b class="t-amber">O que fazer:</b> ${DIR[weak.i].resumo}
+      <br><b class="t-amber">What to do:</b> ${DIR[weak.i].resumo}
     </div>
     ${semUso ? '' : `<div class="note n-danger mt-8">
-      <b class="tiny t-red">EVIDÊNCIA — falhas de execução registradas</b><br>
-      ${falhas.length ? falhas.map(t=>`• <b>${t.n}</b>: ${t.f} falhas em ${t.c} chamadas (${Math.round(100*t.f/t.c)}%)`).join('<br>') : '• nenhuma falha de ferramenta registrada'}
+      <b class="tiny t-red">EVIDENCE — recorded execution failures</b><br>
+      ${falhas.length ? falhas.map(t=>`• <b>${t.n}</b>: ${t.f} failures in ${t.c} calls (${Math.round(100*t.f/t.c)}%)`).join('<br>') : '• no recorded tool failures'}
     </div>`}
   </div>
 
   <div class="card mb-16">
-    <div class="card-t"><h3>2 · Antes × depois</h3><span class="sub">o prompt lado a lado — 🔴 remove, 🟢 adiciona</span></div>
+    <div class="card-t"><h3>2 · Before × after</h3><span class="sub">the prompt side by side — 🔴 remove, 🟢 add</span></div>
     <div class="row mb-16">
-      <div class="center"><div class="tiny muted bold">HOJE</div>${ring(ov,62)}</div>
+      <div class="center"><div class="tiny muted bold">TODAY</div>${ring(ov,62)}</div>
       <span style="font-size:20px" class="muted">→</span>
-      <div class="center"><div class="tiny bold t-green">DEPOIS</div>${ring(novo,62)}</div>
-      <span class="chip chip-ok">▲ +${novo-ov} pts projetados</span>
+      <div class="center"><div class="tiny bold t-green">AFTER</div>${ring(novo,62)}</div>
+      <span class="chip chip-ok">▲ +${novo-ov} projected pts</span>
       <div class="flex1 small" style="min-width:240px;line-height:1.7">
-        <b class="t-red">Hoje:</b> ${COMPORTAMENTO[weak.i]}<br>
-        <b class="t-green">Depois:</b> ${DIR[weak.i].resumo}
+        <b class="t-red">Today:</b> ${COMPORTAMENTO[weak.i]}<br>
+        <b class="t-green">After:</b> ${DIR[weak.i].resumo}
       </div>
     </div>
     <div class="diff-grid">
-      <div class="diff-col"><div class="dh dh-red">HOJE — negrito = o que atrapalha</div>
-        <div class="dc">${DIR[weak.i].remover.length? '🔴 REMOVER:\n' + DIR[weak.i].remover.map(r=>'• '+r).join('\n') + '\n\n' : ''}${highlightAntes(a)}</div></div>
-      <div class="diff-col"><div class="dh dh-green">SUGERIDO — mudança já aplicada (verde = entra)</div>
-        <div class="dc">🟢 ADICIONAR:\n${DIR[weak.i].adicionar}\n\n${esc(suggestedPromptText(a))}</div></div>
+      <div class="diff-col"><div class="dh dh-red">TODAY — bold = what gets in the way</div>
+        <div class="dc">${DIR[weak.i].remover.length? '🔴 REMOVE:\n' + DIR[weak.i].remover.map(r=>'• '+r).join('\n') + '\n\n' : ''}${highlightAntes(a)}</div></div>
+      <div class="diff-col"><div class="dh dh-green">SUGGESTED — change already applied (green = added)</div>
+        <div class="dc">🟢 ADD:\n${DIR[weak.i].adicionar}\n\n${esc(suggestedPromptText(a))}</div></div>
     </div>
     <div class="grid g-2 mt-16" style="gap:20px">
-      <div><b class="tiny t-red">CRITÉRIOS HOJE</b>
+      <div><b class="tiny t-red">CRITERIA TODAY</b>
         ${weak3.map(i=>`<div class="hbar" style="margin:7px 0"><div class="lab" style="width:92px">${CRIT[i].s}</div><div class="track"><div class="fill f-red" style="--w:${before[i]}%"></div></div><div class="val t-red">${before[i]}</div></div>`).join('')}
       </div>
-      <div><b class="tiny t-green">CRITÉRIOS DEPOIS</b>
+      <div><b class="tiny t-green">CRITERIA AFTER</b>
         ${weak3.map(i=>`<div class="hbar" style="margin:7px 0"><div class="lab" style="width:92px">${CRIT[i].s}</div><div class="track"><div class="fill f-green" style="--w:${after[i]}%"></div></div><div class="val t-green">${after[i]} ▲</div></div>`).join('')}
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-t"><h3>3 · Aplicar e iterar</h3><span class="sub">você manda — a skill cuida da repetição</span></div>
+    <div class="card-t"><h3>3 · Apply and iterate</h3><span class="sub">you decide — the skill handles the repetition</span></div>
     <div class="grid g-2">
       <div>
-        <b class="small" style="display:block;margin-bottom:8px">✏️ Prompt sugerido (edite do seu jeito)</b>
+        <b class="small" style="display:block;margin-bottom:8px">✏️ Suggested prompt (edit it your way)</b>
         <textarea class="ta" id="evoEdit">${esc(suggestedPromptText(a))}</textarea>
         <div class="row mt-12">
-          <button class="btn btn-primary btn-sm" onclick="simulate()">▶ simular resultado</button>
-          <button class="btn btn-ghost btn-sm" onclick="copyPrompt(this)">📋 copiar prompt</button>
+          <button class="btn btn-primary btn-sm" onclick="simulate()">▶ simulate result</button>
+          <button class="btn btn-ghost btn-sm" onclick="copyPrompt(this)">📋 copy prompt</button>
         </div>
         <div id="evoSim" class="mt-12"></div>
-        <div class="row mt-12"><a class="link" href="#/perguntar/${a.id}" style="margin-left:auto">💬 depois de aplicar, veja como pedir para este agente →</a></div>
+        <div class="row mt-12"><a class="link" href="#/perguntar/${a.id}" style="margin-left:auto">💬 after applying, see how to ask this agent →</a></div>
       </div>
       <div>
-        <b class="small" style="display:block;margin-bottom:8px">🧩 Skill de iteração gerada para este agente</b>
+        <b class="small" style="display:block;margin-bottom:8px">🧩 Iteration skill generated for this agent</b>
         <div class="skill-card" id="skillGen"></div>
-        <p class="tiny muted mt-8" style="line-height:1.6">A skill reaproveita o diagnóstico: gatilho = critério mais fraco, passos = receita + formato canônico (${6-missing.length}/6 seções ✓${missing.length? ' · faltam: '+missing.join(', '):''}).</p>
+        <p class="tiny muted mt-8" style="line-height:1.6">The skill reuses the diagnosis: trigger = weakest criterion, steps = recipe + canonical format (${6-missing.length}/6 sections ✓${missing.length? ' · missing: '+missing.join(', '):''}).</p>
       </div>
     </div>
   </div>`;
   const g = gerarSkill(a, weak.i);
   document.getElementById('skillGen').innerHTML =
     `<div class="sk-name">🧩 ${g.nome}</div>
-     <div class="sk-tr">gatilho · ${g.gatilho}</div>
+     <div class="sk-tr">trigger · ${g.gatilho}</div>
      <ol>${g.passos.map(p=>`<li>${p}</li>`).join('')}</ol>
-     <div class="sk-foot">rodar: quando ${g.quando} · conferir: ${g.confere}</div>`;
+     <div class="sk-foot">run: when ${g.quando} · check: ${g.confere}</div>`;
 }
 function simulate(){
   const a = AGENTS.find(x=>x.id===document.getElementById('agentSel').value) || AGENTS[0];
@@ -2026,26 +2024,26 @@ function simulate(){
   const novo = Math.min(99, ov + Math.max(8, Math.min(20, Math.round((95-weak.v)*0.4))));
   document.getElementById('evoSim').innerHTML =
     `<div class="note n-ok">
-      <b class="small">⚡ Simulação concluída — mesmo cenário, agente atualizado:</b>
+      <b class="small">⚡ Simulation complete — same scenario, updated agent:</b>
       <div class="row mt-12">
         <div class="center">
           <div class="tiny muted bold">SCORE</div>
           <div><span style="font-size:20px" class="bold t-red">${ov}</span> <span style="font-size:18px" class="muted">→</span> <span style="font-size:20px" class="bold t-green">${novo}</span></div>
           <div class="tiny bold t-green">▲ +${novo-ov} pts</div>
         </div>
-        <div class="tiny bold">✅ evals simulados: 5/5 passando<br><span class="t-amber">🎯 critério mais fraco: ${CRIT[weak.i].s} ▲</span></div>
+        <div class="tiny bold">✅ simulated evals: 5/5 passing<br><span class="t-amber">🎯 weakest criterion: ${CRIT[weak.i].s} ▲</span></div>
       </div>
-      <p class="tiny muted mt-8">Projeção baseada no padrão de sucesso dos agentes do nível seguinte. Em produção: a receita altera as instruções e a reanálise confirma o ganho nos dias seguintes.</p>
+      <p class="tiny muted mt-8">Projection based on the success pattern of the next-level agents. In production: the recipe changes the instructions and the re-analysis confirms the gain in the following days.</p>
     </div>`;
 }
 function copyPrompt(btn){
   const t = document.getElementById('evoEdit');
   navigator.clipboard && navigator.clipboard.writeText(t.value).then(()=>{
-    if (btn){ btn.textContent = '✅ copiado!'; setTimeout(()=>btn.textContent='📋 copiar prompt',1600); }
+    if (btn){ btn.textContent = '✅ copied!'; setTimeout(()=>btn.textContent='📋 copy prompt',1600); }
   });
 }
 
-/* ============================ ACOMPANHAR ============================ */
+/* ============================ TRACK ============================ */
 function renderAcomp(param){
   const sel = document.getElementById('agentSel');
   const a = AGENTS.find(x=>x.id===(param||(sel&&sel.value))) || AGENTS[0];
@@ -2056,15 +2054,15 @@ function renderAcomp(param){
   const diasParado = a.lastMsg ? daysAgo(a.lastMsg) : 999;
   const editado = a.created !== a.updated;
   document.getElementById('acompKpis').innerHTML = `
-    <div class="kpi"><div class="v">${diasVida}d</div><div class="l">dias de vida</div><div class="t">desde a criação</div></div>
-    <div class="kpi"><div class="v">${editado?'sim':'não'}</div><div class="l">editado após criar</div><div class="t">evolução do prompt</div></div>
-    <div class="kpi"><div class="v">${a.lastMsg?diasParado+'d':'—'}</div><div class="l">desde o último uso</div><div class="t">${a.lastMsg?a.lastMsg:'nunca usado'}</div></div>`;
+    <div class="kpi"><div class="v">${diasVida}d</div><div class="l">days alive</div><div class="t">since creation</div></div>
+    <div class="kpi"><div class="v">${editado?'yes':'no'}</div><div class="l">edited after creation</div><div class="t">prompt evolution</div></div>
+    <div class="kpi"><div class="v">${a.lastMsg?diasParado+'d':'—'}</div><div class="l">since last use</div><div class="t">${a.lastMsg?a.lastMsg:'never used'}</div></div>`;
   const sr = a.interactions.total? Math.round(100*a.interactions.success/a.interactions.total):null;
   const events = [
-    {e:'🌱', t:'Criado no catálogo', d:`${a.created} · dono: ${a.owner.split('@')[0]}`},
-    ...(editado? [{e:'✏️', t:'Última edição', d:`${a.updated} · editor: ${a.lastEditor.split('@')[0]}`}] : []),
-    ...(a.lastMsg? [{e:'⚡', t:'Última interação', d:`${a.lastMsg} · ferramenta mais usada: ${(a.tools[0]||{}).n||'—'}`}] : [{e:'🪦', t:'Nunca foi usado', d:'nenhuma interação registrada em produção'}]),
-    {e:'🎯', t:'Estado atual', d:`nível ${a.level} · score ${j.final} · ${sr===null?'sem uso':sr+'% sucesso'}`},
+    {e:'🌱', t:'Created in the catalog', d:`${a.created} · owner: ${a.owner.split('@')[0]}`},
+    ...(editado? [{e:'✏️', t:'Last edit', d:`${a.updated} · editor: ${a.lastEditor.split('@')[0]}`}] : []),
+    ...(a.lastMsg? [{e:'⚡', t:'Last interaction', d:`${a.lastMsg} · most used tool: ${(a.tools[0]||{}).n||'—'}`}] : [{e:'🪦', t:'Never used', d:'no interaction recorded in production'}]),
+    {e:'🎯', t:'Current state', d:`level ${a.level} · score ${j.final} · ${sr===null?'no use':sr+'% success'}`},
   ];
   document.getElementById('acompTimeline').innerHTML = events.map((ev,i)=>`
     <div class="timeline-item">
@@ -2084,7 +2082,7 @@ function renderAcomp(param){
     return `<div class="hbar mb-8"><div class="lab" style="width:58px;font-size:8.5px">${d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})}</div>
       <div class="track"><div class="fill ${v>=85?'f-green':v>=60?'f-amber':'f-red'}" style="--w:${Math.round(100*v/maxW)}%"></div></div>
       <div class="val" style="min-width:30px;font-size:9px">${v}%</div></div>`;
-  }).join('') + `<p class="tiny muted mt-8">tendência semanal reconstruída do padrão de interações${sr===null?' · agente sem uso':''}${sr!==null?' · hoje: '+sr+'%':''}</p>`;
+  }).join('') + `<p class="tiny muted mt-8">weekly trend reconstructed from the interaction pattern${sr===null?' · unused agent':''}${sr!==null?' · today: '+sr+'%':''}</p>`;
   const nextGateIdx = GATES.findIndex((g,i)=>!gateDone(a,i));
   document.getElementById('acompGates').innerHTML = GATES.map((g,i)=>{
     const ok = gateDone(a,i);
@@ -2092,34 +2090,34 @@ function renderAcomp(param){
     return `<div class="gate-row ${ok?'ok':'no'}">
       <span class="gate-ico" style="background:${ok?'var(--green)':'var(--amber)'}">${ok?'✓':'→'}</span>
       <span class="flex1">${g}</span>
-      ${isNext?'<span class="chip chip-amber">próximo gate</span>':ok?'<span class="tiny bold t-green">ok</span>':''}
+      ${isNext?'<span class="chip chip-amber">next gate</span>':ok?'<span class="tiny bold t-green">ok</span>':''}
     </div>`;
   }).join('');
   const pos = [...AGENTS].sort((x,y)=>joinedScore(y).final-joinedScore(x).final).findIndex(x=>x.id===a.id)+1;
   document.getElementById('acompNow').innerHTML = `
-    <div class="stat-box" style="background:var(--soft)"><b>🏆 Posição no ranking</b><div class="big">#${pos} de ${AGENTS.length}</div><p>score ${j.final} na régua de qualidade</p></div>
-    <div class="stat-box" style="background:var(--amber-soft)"><b>🪜 Próximo gate</b><div class="big" style="font-size:11px;line-height:1.4">${nextGateIdx>=0?GATES[nextGateIdx]:'todos cumpridos 🏆'}</div><p>${nextGateIdx>=0?gatePlan(a,nextGateIdx):'governança completa'}</p></div>
-    <div class="stat-box" style="background:var(--green-soft)"><b>⚡ Ritmo de uso</b><div class="big">${a.lastMsg?(diasParado<=1?'usado hoje':diasParado+'d parado'):'nunca usado'}</div><p>${a.interactions.total} interações registradas</p></div>`;
+    <div class="stat-box" style="background:var(--soft)"><b>🏆 Ranking position</b><div class="big">#${pos} of ${AGENTS.length}</div><p>score ${j.final} on the quality ruler</p></div>
+    <div class="stat-box" style="background:var(--amber-soft)"><b>🪜 Next gate</b><div class="big" style="font-size:11px;line-height:1.4">${nextGateIdx>=0?GATES[nextGateIdx]:'all met 🏆'}</div><p>${nextGateIdx>=0?gatePlan(a,nextGateIdx):'complete governance'}</p></div>
+    <div class="stat-box" style="background:var(--green-soft)"><b>⚡ Usage pace</b><div class="big">${a.lastMsg?(diasParado<=1?'used today':diasParado+'d idle'):'never used'}</div><p>${a.interactions.total} recorded interactions</p></div>`;
   const lp = document.getElementById('acompLoop');
   if (lp) lp.innerHTML = `
     <div class="note n-ok">
       <div class="row">
-        <div class="flex1"><b class="small t-green">🔁 O ciclo fechou — ou recomeça</b>
-          <p class="tiny" style="margin-top:3px">Com a mudança aplicada e o resultado acompanhado, o agente volta para quem usa. Aprenda a pedir do jeito certo — ou escolha o próximo agente que precisa de correção.</p></div>
-        <button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${a.id}'">usar: aprender a perguntar →</button>
+        <div class="flex1"><b class="small t-green">🔁 The loop closed — or restarts</b>
+          <p class="tiny" style="margin-top:3px">With the change applied and the result tracked, the agent goes back to the people who use it. Learn to ask the right way — or pick the next agent that needs a fix.</p></div>
+        <button class="btn btn-teal btn-sm" onclick="location.hash='#/perguntar/${a.id}'">use: learn how to ask →</button>
       </div>
     </div>`;
 }
 
-/* ============================ COMO FUNCIONA ============================ */
+/* ============================ HOW IT WORKS ============================ */
 function renderArch(){
   const QUERIES = [
-    {t:'Perfil & governança', q:"SELECT name, purpose, maturity_level, is_used,\\n       owner_email, last_editor_email, oauth_tools,\\n       created_at, updated_at\\nFROM   pagob2b.toqan_ficticio.toqan_agents;", r:'alimenta: Panorama, Inventário, Conheça o agente, gates de governança'},
-    {t:'Uso & desempenho', q:"SELECT space_id,\\n       COUNT(*)                                   AS interacoes,\\n       SUM(CASE WHEN tool_call_status='succeeded' THEN 1 ELSE 0 END) AS sucesso,\\n       COUNT(DISTINCT platform_type)              AS canais,\\n       COUNT(DISTINCT skills_used)                AS skills\\nFROM   pagob2b.toqan_ficticio.toqan_interactions\\nGROUP  BY space_id;", r:'alimenta: sucesso, adoção, canais, recência, skills'},
-    {t:'Coerência (maturidade × sucesso)', q:"WITH uso AS (\\n  SELECT space_id, AVG(CASE WHEN tool_call_status='succeeded' THEN 1.0 ELSE 0 END) AS tx\\n  FROM pagob2b.toqan_ficticio.toqan_interactions GROUP BY space_id)\\nSELECT a.name, a.maturity_level, ROUND(100*u.tx) AS sucesso_real\\nFROM pagob2b.toqan_ficticio.toqan_agents a\\nJOIN uso u ON u.space_id = a.space_id;", r:'alimenta: critério Coerência e o eixo X da régua'},
-    {t:'Ferramentas com falha', q:"SELECT tool_call_name,\\n       COUNT(*) AS chamadas,\\n       SUM(CASE WHEN tool_call_status='failed' THEN 1 ELSE 0 END) AS falhas\\nFROM   pagob2b.toqan_ficticio.toqan_interactions\\nWHERE  space_id = '<agente>'\\nGROUP  BY tool_call_name;", r:'alimenta: critério Ferramentas e a evidência das Receitas'},
-    {t:'Ociosos & recência', q:"SELECT a.name, MAX(i.message_created_at) AS ultimo_uso\\nFROM   pagob2b.toqan_ficticio.toqan_agents a\\nLEFT   JOIN pagob2b.toqan_ficticio.toqan_interactions i\\n       ON i.space_id = a.space_id\\nGROUP  BY a.name\\nHAVING MAX(i.message_created_at) < CURRENT_DATE - 30\\n    OR MAX(i.message_created_at) IS NULL;", r:'alimenta: bloco "em desuso" e o critério Recência'},
-    {t:'Evals em produção (futuro)', q:"-- scores RAGAS / DeepEval emitidos pela esteira de eval\\nSELECT trace_id, answer_relevancy, faithfulness,\\n       contextual_precision, contextual_recall,\\n       task_success, step_efficiency\\nFROM   <eval_store>;", r:'substitui os proxies do pilar "Qualidade da Resposta" quando a esteira real ligar'},
+    {t:'Profile & governance', q:"SELECT name, purpose, maturity_level, is_used,\\n       owner_email, last_editor_email, oauth_tools,\\n       created_at, updated_at\\nFROM   pagob2b.toqan_ficticio.toqan_agents;", r:'feeds: Overview, Inventory, Meet the agent, governance gates'},
+    {t:'Use & performance', q:"SELECT space_id,\\n       COUNT(*)                                   AS interactions,\\n       SUM(CASE WHEN tool_call_status='succeeded' THEN 1 ELSE 0 END) AS success,\\n       COUNT(DISTINCT platform_type)              AS channels,\\n       COUNT(DISTINCT skills_used)                AS skills\\nFROM   pagob2b.toqan_ficticio.toqan_interactions\\nGROUP  BY space_id;", r:'feeds: success, adoption, channels, recency, skills'},
+    {t:'Coherence (maturity × success)', q:"WITH usage AS (\\n  SELECT space_id, AVG(CASE WHEN tool_call_status='succeeded' THEN 1.0 ELSE 0 END) AS rate\\n  FROM pagob2b.toqan_ficticio.toqan_interactions GROUP BY space_id)\\nSELECT a.name, a.maturity_level, ROUND(100*u.rate) AS real_success\\nFROM pagob2b.toqan_ficticio.toqan_agents a\\nJOIN usage u ON u.space_id = a.space_id;", r:'feeds: the Coherence criterion and the X axis of the ruler'},
+    {t:'Failing tools', q:"SELECT tool_call_name,\\n       COUNT(*) AS calls,\\n       SUM(CASE WHEN tool_call_status='failed' THEN 1 ELSE 0 END) AS failures\\nFROM   pagob2b.toqan_ficticio.toqan_interactions\\nWHERE  space_id = '<agent>'\\nGROUP  BY tool_call_name;", r:'feeds: the Tools criterion and the Recipes evidence'},
+    {t:'Idle & recency', q:"SELECT a.name, MAX(i.message_created_at) AS last_use\\nFROM   pagob2b.toqan_ficticio.toqan_agents a\\nLEFT   JOIN pagob2b.toqan_ficticio.toqan_interactions i\\n       ON i.space_id = a.space_id\\nGROUP  BY a.name\\nHAVING MAX(i.message_created_at) < CURRENT_DATE - 30\\n    OR MAX(i.message_created_at) IS NULL;", r:'feeds: the "out of use" block and the Recency criterion'},
+    {t:'Production evals (future)', q:"-- RAGAS / DeepEval scores emitted by the eval pipeline\\nSELECT trace_id, answer_relevancy, faithfulness,\\n       contextual_precision, contextual_recall,\\n       task_success, step_efficiency\\nFROM   <eval_store>;", r:'replaces the proxies of the "Answer quality" pillar when the real pipeline turns on'},
   ];
   document.getElementById('sqlList').innerHTML = QUERIES.map((x,i)=>`
     <details class="sql" ${i===0?'open':''}>
